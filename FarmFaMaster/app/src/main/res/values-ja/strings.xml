@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FarmFa</string>
+    <string name="navigation_drawer_open">ナビゲーションドロワーを開く</string>
+    <string name="navigation_drawer_close">ナビゲーションドロワーを閉じる</string>
+    <string name="nav_header_title">農業監督</string>
+    <string name="nav_header_subtitle">著作権  2019-2022 Smart Farm  </string>
+    <string name="nav_header_desc">ナビゲーションヘッダー</string>
+    <string name="action_settings">設定</string>
+    <string name="action_settings_vi">設定</string>
+
+    <string name="menu_home">ホーム</string>
+    <string name="menu_mode">モード</string>
+    <string name="menu_gallery">ガーデンマネージャー </string>
+    <string name="menu_share">高品質な物質管理</string>
+    <string name="menu_send">生産管理 </string>
+    <string name="menu_vegetable">生産管理</string>
+    <string name="menu_device_category">デバイスカテゴリマネージャー</string>
+    <string name="menu_device">デバイスマネージャ  </string>
+    <string name="menu_thamso">パラメータマネージャ </string>
+    <string name="menu_users">ユーザーマネージャー</string>
+    <string name="menu_infor">"情報と管理"</string>
+    <string name="menu_manager">"行政"</string>
+
+    <string name="email">Email </string>
+    <string name="gender">性別</string>
+    <string name="male">男性</string>
+    <string name="female">女性</string>
+    <string name="userName">ユーザー名</string>
+    <string name="passowrd">パスワード</string>
+    <string name="login">ログインする</string>
+    <string name="show_pwd">パスワードを表示</string>
+    <string name="hide_pwd">パスワードを隠す</string>
+    <string name="forgot">パスワードをお忘れですか</string>
+    <string name="closebutton">アクティビティの閉じるボタンy</string>
+    <string name="newUser">まだメンバーではありませんか？ ここにサインアップ.</string>
+    <string name="fullName">フルネーム</string>
+    <string name="mobileNumber">携帯電話番号</string>
+    <string name="location">ロケーション</string>
+    <string name="confirmPassword">パスワードを認証する</string>
+    <string name="terms_conditions">[登録]をクリックすると、すべて の利用規約に同意したことになり.</string>
+    <string name="signUp">ます</string>
+    <string name="already_user">すでにアカウントをお持ちですか？ ここでログイン.</string>
+    <string name="registered_emailid">以下に登録済みメールIDを入力してください:</string>
+    <string name="submit">参加する</string>
+    <string name="back">バック</string>
+    <string name="selected_item">選択したアイテム：</string>
+    <string name="title_context_menu"> オプション </string>
+    <string name="edit">編集する</string>
+    <string name="delete">削除する</string>
+
+    <!-- by vu-->
+    <string name="text_accounts">すべてのアカウント</string>
+    <string name="hint_name">名前</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">パスワード</string>
+    <string name="hint_confirm_password">パスワードを認証する</string>
+    <string name="text_login">ログインする</string>
+    <string name="text_register">登録</string>
+    <string name="error_message_name">氏名を入力してくださいe</string>
+    <string name="error_message_email">有効に入力してください</string>
+    <string name="error_start_date_batch">有効な開始日を入力してください</string>
+    <string name="batch_add_success">データを正常に挿入します</string>
+    <string name="batch_add_failed">データを正常に挿入します</string>
+    <string name="error_end_date_batch">挿入されたデータが失敗しました</string>
+    <string name="error_name_batch">有効な終了日を入力してください</string>
+    <string name="error_message_age">年齢を入力してください</string>
+    <string name="error_message_password">パスワードを入力する</string>
+    <string name="error_message_confirm_password">登録に成功</string>
+    <string name="success_message">登録に成功</string>
+    <string name="fail_message">登録に失敗</string>
+    <string name="text_not_member">まだアカウントはありませんか？ 一つ作る</string>
+    <string name="text_already_member">すでにメンバーですか？ ログインする</string>
+    <string name="error_email_exists">もう存在している</string>
+    <string name="error_password_match">パスワードが一致しません</string>
+    <string name="error_valid_email_password">メールアドレスまたはパスワードが間違っています</string>
+    <string name="error_common_email_password">メールアドレスとパスワードが間違っている!</string>
+    <!--the end by vu-->
+
+    <!--Login-->
+    <string name="status_login_vi">ログイン状態を保存</string>
+    <string name="user_name_login_vi">メールアドレスを入力して...</string>
+    <string name="password_login_vi">パスワードを入力する...</string>
+    <string name="sign_up_vi">登録</string>
+    <string name="send_email_vi">メールを送る</string>
+    <string name="login_vi">ログインする</string>
+    <string name="forgot_pass_vi">パスワードをお忘れですか ?</string>
+    <string name="forgot_pass_title_vi">パスワードをお忘れですか</string>
+    <!--the end login-->
+
+    <!--Sign up-->
+    <string name="gender_vi">性別</string>
+    <string name="user_name_vi">ユーザー名</string>
+    <string name="full_name_vi">氏名</string>
+    <string name="enter_email_vi">登録したメールアドレスを入力してください</string>
+    <string name="passowrd_vi">パスワードを入力してください</string>
+    <string name="old_passowrd_vi">古いパスワードを入力してくださいũ</string>
+    <string name="passowrd_new_vi">新しいパスワードを入力してください</string>
+    <string name="confirm_passoword_vi">もう一度パスワードを入力してください</string>
+    <string name="confirm_passoword_new_vi">もう一度パスワードを入力してください</string>
+    <string name="already_user_vi">すでにアカウントをお持ちですか？ 今すぐログイン.</string>
+    <string name="return_login_vi">ログインに戻る</string>
+    <string name="back_home_vi">ホームページに戻る</string>
+    <!--the end sign up-->
+
+    <!--vegetable VI-->
+    <string name="Veg_title_vi">野菜の種類は栽培されています</string>
+    <string name="Veg_Empty_Message_vi">野菜のリストは空です！</string>
+    <string name="error_empty_veg_category_common">野菜畑は空にしてはいけません！</string>
+    <string name="add_veg">野菜を加える</string>
+    <string name="enter_name_veg">野菜名を入力してください</string>
+    <string name="add_veg_for_garden">野菜を追加</string>
+    <string name="delete_veg_for_garden">取り除かれた野菜</string>
+    <string name="add_only_veg">庭に追加される野菜は1つだけです</string>
+    <string name="firt_count_veg">野菜を</string>
+    <string name="last_count_veg">個追加</string>
+    <!-- end vegetable VI-->
+
+    <!--quantity-->
+    <string name="add_veg_vi">詳細</string>
+    <!--The end quantity-->
+
+    <!--error VI-->
+    <string name="error_empty_common">このフィールドは空白にできません !</string>
+    <string name="error_match_password">登録パスワードが一致しません !</string>
+    <string name="error_match_password_1">新しいパスワードが一致しません !</string>
+    <string name="error_old_password">古いパスワードが一致しません !</string>
+    <string name="error_invalid_email">メールフィールドが無効です !</string>
+    <string name="error_invalid_email_exits">メールはすでに存在します !</string>
+    <string name="sign_up_success">登録に成功しました !</string>
+    <string name="sign_blocked">このアカウントはロックされています !</string>
+    <string name="sign_up_fail">登録できませんでした !</string>
+    <string name="error_username_pass_invalid">ユーザー名またはパスワードが正しくありません !</string>
+    <string name="error_veg_exist">この野菜はすでに存在します !</string>
+    <string name="error_device_exist">このタイプのデバイスはすでに存在します !</string>
+    <string name="error_garden_exist">この庭はすでに存在しています !</string>
+    <string name="error_batch_exist">このバッチはすでに存在します !</string>
+    <string name="error_to_smaller_from">入力値は単語値より小さくすることはできません</string>
+    <!--The end error-->
+
+    <!--common-->
+    <string name="choose_img_vi">写真を選んでください</string>
+    <string name="insert_data_success_vi">より多くの成功 !</string>
+    <string name="update_data_success_vi">更新が成功しました !</string>
+    <string name="insert_data_fail_vi">追加できませんでした !</string>
+    <string name="update_data_fail_vi">更新できませんでした !</string>
+    <string name="deleted_data_success_vi">削除しました !</string>
+    <string name="size_image_large">画像サイズが大きすぎます !</string>
+    <string name="image_no_select_vi">画像を選択していません !</string>
+    <string name="add_vi">追加する</string>
+    <string name="update_vi">更新する</string>
+    <string name="cancel_vi">出口</string>
+    <string name="view_vi">写真を見る</string>
+    <string name="quit_vi">キャンセルする</string>
+    <string name="yes_vi">はい</string>
+    <string name="print_vi">で</string>
+    <string name="no_data_vi">データがありません</string>
+    <string name="delete_title_all_vi">削除してもよろしいですか ?</string>
+    <!--end common-->
+
+    <!--garden VI-->
+    <string name="name_kv_vi">庭名</string>
+    <string name="delete_kv_vi">庭を片付ける</string>
+    <string name="list_garden_is_empty">庭のリストは空です!</string>
+    <string name="setting_code_arduino_send_mail">庭のArduinoインストールコード</string>
+    <string name="code_garden_send_mail">庭のコード： </string>
+    <string name="delete_detail_device">デバイスの詳細を削除する</string>
+    <!--garden VI-->
+
+    <!--device VI-->
+    <string name="error_empty_device_category_common">デバイスタイプフィールドは空白にできません !</string>
+    <string name="error_empty_device_using_common">目的フィールドは空白にできません !</string>
+    <string name="error_empty_device_home_info">情報を表示しているデバイスのリストが空です !</string>
+    <string name="error_empty_device_home_control">制御装置のリストが空です !</string>
+    <string name="name_device_vi">デバイス名</string>
+    <string name="decription_device_vi">デバイスの説明</string>
+    <string name="broken_device_vi">損傷した</string>
+    <string name="control_device_vi">デバイス制御</string>
+    <string name="control_device_setting_vi">インストールされているデバイス</string>
+    <string name="message_unSetting_vi">デバイスがアンインストールされました</string>
+    <string name="message_Setting_vi">インストールされているデバイス</string>
+    <string name="select_device_and_veg_vi">追加された（0）デバイス</string>
+    <string name="select_veg_vi">追加（0）野菜</string>
+    <string name="list_device_isEmpty_vi">デバイスリストが空です !</string>
+    <string name="add_device">デバイスを追加</string>
+    <string name="last_count_device">端末</string>
+    <string name="device_exist">デバイスはすでに存在します</string>
+    <string name="device_name_send_mail">Arduinoのインストールコード</string>
+    <string name="device_code_send_mail">デバイスコード</string>
+    <string name="delete_device_category">デバイスタイプを削除</string>
+    <string name="device_category_is_empty">デバイスタイプリストが空です</string>
+    <!-- end device VI-->
+
+    <!--Temperature VI-->
+    <string name="decription_Temperature_vi">温度 (°C)</string>
+    <!-- end Temperature VI-->
+
+    <!-- Humidity VI-->
+    <string name="decription_Humidity_vi">湿度 (%)</string>
+    <string name="title_activity_settings">設定</string>
+    <!-- end  Humidity VI-->
+
+    <!-- Preference Titles -->
+    <string name="messages_header">メッセージ</string>
+    <string name="sync_header">同期</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">あなたの署名</string>
+    <string name="reply_title">デフォルトの返信アクション</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">メールトランジットを同期する</string>
+    <string name="attachment_title">受信した添付ファイルをダウンロードする</string>
+    <string name="attachment_summary_on">受信メールの添付ファイルを自動的にダウンロードする</string>
+    <string name="attachment_summary_off">手動でリクエストした場合にのみ添付ファイルをダウンロードする</string>
+    <!-- End Sync Preferences -->
+
+    <!-- param -->
+    <string name="from_vi">から</string>
+    <string name="to_vi">へ</string>
+    <string name="day_vi">昼間</string>
+    <string name="night_vi">夜</string>
+    <string name="temp_param_vi">温度 (°C)</string>
+    <string name="message_setting_param">この野菜にはパラメータが設定されています !</string>
+    <string name="message_no_setting_param">この野菜にはパラメータが設定されていません !</string>
+    <string name="no_setting_param_vi">パラメータが設定されていません</string>
+    <string name="setting_param_vi">パラメータが設定されました</string>
+
+    <string name="select_language_vi">言語を選択してください</string>
+    <string name="language_vi_en">言語</string>
+    <string name="change_pass_vi">パスワードを変更する</string>
+    <string name="log_out_system_vi">ログアウト</string>
+    <string name="account_vi">アカウントとパスワード</string>
+    <string name="block_user_vi">ロックする</string>
+    <!--end param -->
+
+    <!-- Home -->
+    <string name="rain_mode_vi">日よけカバー雨</string>
+    <string name="lamp_mode_vi">加熱ランプ</string>
+    <string name="motor_tds_mode_vi">解決策</string>
+    <string name="motor_tds_full_mode_vi">栄養液（ppm）</string>
+    <string name="motor_phun_suong_mode_vi">ミスト</string>
+    <string name="level_TDS_vi">インクソリュ</string>
+    <string name="level_TDS_for_param_vi">インク溶液（cm）)</string>
+    <string name="message_rain_vi">雨警報</string>
+    <string name="temp_vi">温度 (°C)</string>
+    <string name="Do_ph_vi"> PH</string>
+    <string name="Hum_vi">湿度 (%)</string>
+    <string name="TDS_vi">栄養 (ppm)</string>
+    <string name="thong_ke_vi">統計学</string>
+    <string name="unknown_vi">ヌル</string>
+    <string name="ON_vi">に</string>
+    <string name="OFF_vi">オフ</string>
+    <string name="time_slot_vi">時間枠</string>
+    <string name="next_vi">に</string>
+    <string name="back_vi">後ろ向</string>
+    <string name="stop_vi">やめる</string>
+    <string name="da_cai_dat_vi">すでにインスト</string>
+    <string name="device_status_vi">装備</string>
+    <string name="chua_cai_dat_vi">インストールさ</string>
+    <string name="Rained">雨が降っている</string>
+    <string name="no_rain">雨は降っていま</string>
+    <!--End Home -->
+
+    <!---substance mass-->
+    <string name="num_dd_used_vi">使用した溶液の量 (L)</string>
+    <string name="substance_empty_vi">流体タイプのリストが空です !</string>
+    <string name="substance_delete_title_vi">ソリューションタイプの詳細をクリアする</string>
+
+    <!--forgot password-->
+    <string name="subject_reset_password">パスワードのリセット</string>
+    <string name="send_password_to_email">ログインパスワードが登録メールに送信されました</string>
+    <string name="error_email">このメールは存在しません !</string>
+
+    <!--mode-->
+    <string name="delete_mode_title">削除モード !</string>
+    <string name="time_mode_on">開始する時間</string>
+    <string name="time_mode_off">終了時間</string>
+    <string name="time_mode_on_1">時間をオンにしましたt</string>
+    <string name="time_mode_off_1">休み</string>
+    <string name="detail_mode">モードの詳細</string>
+    <string name="choose_mode_for_device">選択モード</string>
+    <string name="ok_vi">OK</string>
+    <string name="everyday_vi">毎日</string>
+    <string name="choose_vi">選ぶ</string>
+    <string name="list_mode_isEmpty_vi">モードリストが空です !</string>
+    <string name="setting_mode_for_device_vi">インストールモード !</string>
+    <string name="un_setting_mode_for_device_vi">モード設定が削除されました !</string>
+    <string name="repeat">繰り返す</string>
+
+    <!--device category-->
+    <string name="enter_category">デバイスカテゴリを入力してください</string>
+
+    <!--chart-->
+    <string name="chart_humidity">"湿度チャート"</string>
+    <string name="chart_temperature">"温度チャート"</string>
+
+    <!--Batch-->
+    <string name="name_batch">バッチ</string>
+    <string name="day_start">一日の始まり</string>
+    <string name="day_end">終了日</string>
+    <string name="total">総生産量</string>
+    <string name="name_veg_title">野菜の名前</string>
+    <string name="amount">金額</string>
+    <string name="operation">操作</string>
+    <string name="enter_amount">出力番号を入力してください</string>
+    <string name="batch_sum">総出力</string>
+    <string name="delete_batch">出力バッチを削除</string>
+    <string name="list_batch_is_empty">バッチリストが空です！</string>
+    <string name="list_batch_detail_is_empty">詳細な出力リストは空です！</string>
+    <string name="delete_batch_detail">出力の詳細をクリア</string>
+    <string name="delete_param">パラメータを削除</string>
+    <!--Setting-->
+    <string name="choose_lang">言語を選択してください</string>
+    <string name="lang_vi">ベトナム</string>
+    <string name="lang_en">イギリス</string>
+    <string name="lang_ja">にほん</string>
+
+    <!--Setting device-->
+    <string name="not_used_yet_status">未使用</string>
+    <string name="using_status">使用する</string>
+    <string name="broken_status">壊れた</string>
+
+    <!--User-->
+    <string name="list_user_is_empty">ユーザーリストが空です！</string>
+    <string name="delete_user_name_manager">ユーザーを削除</string>
+    <string name="delete_veg_detail">野菜の詳細を削除</string>
+
+    <!--Status home-->
+    <string name="home_status_safe">安全</string>
+    <string name="home_status_no_safe">危険</string>
+
+    <!--message tile-->
+    <string name="title_mode">警告</string>
+    <string name="message_mode_temp">温度が危険です</string>
+
+
+</resources>

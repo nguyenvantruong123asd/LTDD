@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item android:title="@string/menu_infor">
+        <menu>
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_menu_home"
+                android:title="@string/menu_home" />
+
+            <item
+                android:id="@+id/nav_mode"
+                android:icon="@drawable/ic_mode"
+                android:title="@string/menu_mode" />
+
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/menu_manager">
+            <menu>
+                <item
+                    android:id="@+id/nav_gallery"
+                    android:icon="@drawable/ic_menu_garden"
+                    android:title="@string/menu_gallery" />
+
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_mass"
+                    android:title="@string/menu_share" />
+                <item
+                    android:id="@+id/nav_send"
+                    android:icon="@drawable/ic_menu_mass1"
+                    android:title="@string/menu_send" />
+
+                <item
+                    android:id="@+id/nav_thamso"
+                    android:icon="@drawable/ic_menu_thamso"
+                    android:title="@string/menu_thamso" />
+
+                <item
+                    android:id="@+id/nav_vegetable"
+                    android:icon="@drawable/ic_menu_veg"
+                    android:title="@string/menu_vegetable" />
+
+                <item
+                    android:id="@+id/nav_device_category"
+                    android:icon="@drawable/ic_menu_device_category"
+                    android:title="@string/menu_device_category" />
+
+                <item
+                    android:id="@+id/nav_device"
+                    android:icon="@drawable/ic_menu_device1"
+                    android:title="@string/menu_device" />
+
+                <item
+                    android:id="@+id/nav_users"
+                    android:icon="@drawable/ic_users"
+                    android:title="@string/menu_users" />
+            </menu>
+        </item>
+    </group>
+</menu>

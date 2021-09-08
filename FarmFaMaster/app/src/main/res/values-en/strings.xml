@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FarmFa</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Agricultural supervision</string>
+    <string name="nav_header_subtitle">Coppyright  2019-2022 Smart Farm  </string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_settings_vi">Setting</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_mode">Mode</string>
+    <string name="menu_gallery">Garden Manager </string>
+    <string name="menu_share">Quality substance management</string>
+    <string name="menu_send">Production management </string>
+    <string name="menu_vegetable">Vegetable Manager</string>
+    <string name="menu_device_category">Device Category Manager</string>
+    <string name="menu_device">Device Manager  </string>
+    <string name="menu_thamso">Param Manager </string>
+    <string name="menu_users">Users Manager</string>
+    <string name="menu_infor">"Information and Control"</string>
+    <string name="menu_manager">"Manager"</string>
+
+    <string name="email">Email </string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="userName">User Name</string>
+    <string name="passowrd">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="show_pwd">Show Password</string>
+    <string name="hide_pwd">Hide Password</string>
+    <string name="forgot">Forgot password?</string>
+    <string name="closebutton">Close Button for Activity</string>
+    <string name="newUser">Not a Member yet? Sign Up here.</string>
+    <string name="fullName">Full Name</string>
+    <string name="mobileNumber">Mobile Number</string>
+    <string name="location">Location</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="terms_conditions">By clicking SignUp you agree all the Terms and Conditions.</string>
+    <string name="signUp">SIGN UP</string>
+    <string name="already_user">Already have Account? Login here.</string>
+    <string name="registered_emailid">Please enter your Registered Email Id below:</string>
+    <string name="submit">SUBMIT</string>
+    <string name="back">BACK</string>
+
+
+    <string name="selected_item">Selected item:</string>
+
+    <string name="title_context_menu"> Option </string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+
+    <!-- by vu-->
+    <string name="text_accounts">All Accounts</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="text_login">Login</string>
+    <string name="text_register">Register</string>
+    <string name="error_message_name">Enter The Full Name</string>
+    <string name="error_message_email">Enter The Valid Email</string>
+    <string name="error_start_date_batch">Enter Valid Start Date</string>
+    <string name="batch_add_success">Insert Data Successfully</string>
+    <string name="batch_add_failed">Insert Data failed</string>
+    <string name="error_end_date_batch">Enter The Valid End Date</string>
+    <string name="error_name_batch">Enter The Valid Name</string>
+    <string name="error_message_age">Enter The Age</string>
+    <string name="error_message_password">Enter The Password</string>
+    <string name="error_message_confirm_password">Enter The Password</string>
+    <string name="success_message">Registration Successful</string>
+    <string name="fail_message">Registration Fail</string>
+    <string name="text_not_member">No account yet? Create one</string>
+    <string name="text_already_member">Already a member? Login</string>
+    <string name="error_email_exists">Email Already Exists</string>
+    <string name="error_password_match">Password Does Not Matches</string>
+    <string name="error_valid_email_password">Wrong Email or Password</string>
+    <string name="error_common_email_password">Email and password are incorrect!</string>
+    <!--the end by vu-->
+
+    <!--Login-->
+    <string name="status_login_vi">Save login state</string>
+    <string name="user_name_login_vi">Enter the email...</string>
+    <string name="password_login_vi">Enter the password...</string>
+    <string name="sign_up_vi">Register</string>
+    <string name="send_email_vi">Send email</string>
+    <string name="login_vi">Login</string>
+    <string name="forgot_pass_vi">Forgot password ?</string>
+    <string name="forgot_pass_title_vi">Forgot password</string>
+    <!--the end login-->
+
+    <!--Sign up-->
+    <string name="gender_vi">Gender</string>
+    <string name="user_name_vi">Users name</string>
+    <string name="full_name_vi">Full name</string>
+    <string name="enter_email_vi">Enter your registered email</string>
+    <string name="passowrd_vi">Enter the password</string>
+    <string name="old_passowrd_vi">Enter the old password</string>
+    <string name="passowrd_new_vi">Enter your new passwordi</string>
+    <string name="confirm_passoword_vi">Enter the password again</string>
+    <string name="confirm_passoword_new_vi">Enter the password again</string>
+    <string name="already_user_vi">Do you already have an account? Log in now..</string>
+    <string name="return_login_vi">Back to login</string>
+    <string name="back_home_vi">Back to home</string>
+    <!--the end sign up-->
+
+    <!--vegetable VI-->
+    <string name="Veg_title_vi">Vegetables are grown</string>
+    <string name="Veg_Empty_Message_vi">The vegetable list is empty!</string>
+    <string name="error_empty_veg_category_common">The vegetable field must not be empty!</string>
+    <string name="add_veg">Add vegetable</string>
+    <string name="enter_name_veg">Enter the vegetable name</string>
+    <string name="add_veg_for_garden">Added vegetables</string>
+    <string name="delete_veg_for_garden">Removed vegetables</string>
+    <string name="add_only_veg">Only one vegetable is added to the garden</string>
+    <string name="firt_count_veg">Added</string>
+    <string name="last_count_veg">Vegetable</string>
+    <!-- end vegetable VI-->
+
+    <!--quantity-->
+    <string name="add_veg_vi">Add detail</string>
+    <!--The end quantity-->
+
+    <!--error VI-->
+    <string name="error_empty_common">This field cannot be blank !</string>
+    <string name="error_match_password">Registration password does not match !</string>
+    <string name="error_match_password_1">New password does not match !</string>
+    <string name="error_old_password">Old password does not match !</string>
+    <string name="error_invalid_email">Email field is invalid !</string>
+    <string name="error_invalid_email_exits">Email already exists !</string>
+    <string name="sign_up_success">Sign Up Success !</string>
+    <string name="sign_blocked">This account has been locked !</string>
+    <string name="sign_up_fail">Registration failed !</string>
+    <string name="error_username_pass_invalid">Username or password incorrect !</string>
+    <string name="error_veg_exist">This vegetable already existsi !</string>
+    <string name="error_device_exist">This device already existsi !</string>
+    <string name="error_garden_exist">This garden already exists !</string>
+    <string name="error_batch_exist">This batch already exists !</string>
+    <string name="error_to_smaller_from">Incoming value cannot be less than word value</string>
+    <!--The end error-->
+
+    <!--common-->
+    <string name="choose_img_vi">Choose picture</string>
+    <string name="insert_data_success_vi">Add success !</string>
+    <string name="update_data_success_vi">Update success !</string>
+    <string name="insert_data_fail_vi">Add failded !</string>
+    <string name="update_data_fail_vi">Update failded !</string>
+    <string name="deleted_data_success_vi">Delete success !</string>
+    <string name="size_image_large">Large image size  !</string>
+    <string name="image_no_select_vi">You do not choose picture yet !</string>
+    <string name="add_vi">Add</string>
+    <string name="update_vi">Update</string>
+    <string name="cancel_vi">Exist</string>
+    <string name="view_vi">See pictures</string>
+    <string name="quit_vi">Cancel</string>
+    <string name="yes_vi">Yes</string>
+    <string name="print_vi">Print</string>
+    <string name="no_data_vi">Not data</string>
+    <string name="delete_title_all_vi">Are you sure you want to delete ?</string>
+    <!--end common-->
+
+    <!--garden VI-->
+    <string name="name_kv_vi">The garden name</string>
+    <string name="delete_kv_vi">Clear the Garden</string>
+    <string name="list_garden_is_empty">The garden list is empty !</string>
+    <string name="setting_code_arduino_send_mail">Arduino installation code of the garden</string>
+    <string name="code_garden_send_mail">Garden code: </string>
+    <string name="delete_detail_device">Delete device details</string>
+    <!--garden VI-->
+
+    <!--device VI-->
+    <string name="error_empty_device_category_common">Device type field must not be blank !</string>
+    <string name="error_empty_device_using_common">Purpose field may not be blank!</string>
+    <string name="error_empty_device_home_info">List of devices displaying information is empty !</string>
+    <string name="error_empty_device_home_control">List of control devices is empty !</string>
+    <string name="name_device_vi">Device name</string>
+    <string name="decription_device_vi">Description device</string>
+    <string name="broken_device_vi">Damaged</string>
+    <string name="control_device_vi">Device control</string>
+    <string name="control_device_setting_vi">Device installed</string>
+    <string name="message_unSetting_vi">Device uninstalled</string>
+    <string name="message_Setting_vi">Device installed</string>
+    <string name="select_device_and_veg_vi">Added (0) deivecs</string>
+    <string name="select_veg_vi">Added (0) vegetables</string>
+    <string name="list_device_isEmpty_vi">Device list is empty !</string>
+    <string name="add_device">Add device</string>
+    <string name="last_count_device">device</string>
+    <string name="device_exist">Device already exists</string>
+    <string name="device_name_send_mail">Arduino installation code of</string>
+    <string name="device_code_send_mail">Device code</string>
+    <string name="delete_device_category">Delete device type</string>
+    <string name="device_category_is_empty">The device type list is empty</string>
+    <!-- end device VI-->
+
+    <!--Temperature VI-->
+    <string name="decription_Temperature_vi">Temperature (°C)</string>
+    <!-- end Temperature VI-->
+
+    <!-- Humidity VI-->
+    <string name="decription_Humidity_vi">Humidity (%)</string>
+    <string name="title_activity_settings">Settings</string>
+    <!-- end  Humidity VI-->
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <!-- End Sync Preferences -->
+
+    <!-- param -->
+    <string name="from_vi">From </string>
+    <string name="to_vi">To </string>
+    <string name="day_vi">Day</string>
+    <string name="night_vi">Night</string>
+    <string name="temp_param_vi">Temperature (°C)</string>
+    <string name="message_setting_param">Params have been set for this vegetable  !</string>
+    <string name="message_no_setting_param">No parameters have been set for this vegetable !</string>
+    <string name="no_setting_param_vi">No parameters have been set</string>
+    <string name="setting_param_vi">Parameter has been set </string>
+
+    <string name="select_language_vi">Choose language</string>
+    <string name="language_vi_en">Language</string>
+    <string name="change_pass_vi">Change password</string>
+    <string name="log_out_system_vi">Log out</string>
+    <string name="account_vi">Account and password</string>
+    <string name="block_user_vi">Lock</string>
+    <string name="delete_param">Delete parameter</string>
+    <!--end param -->
+
+    <!-- Home -->
+    <string name="rain_mode_vi">Tarpaulins rain</string>
+    <string name="lamp_mode_vi">Heating lamp</string>
+    <string name="motor_tds_mode_vi">Liquid</string>
+    <string name="motor_tds_full_mode_vi">Nutrition solution (ppm)</string>
+    <string name="motor_phun_suong_mode_vi">Misting</string>
+    <string name="level_TDS_vi">Liquid ink</string>
+    <string name="level_TDS_for_param_vi">Ink solution (cm)</string>
+    <string name="message_rain_vi">Rain alert</string>
+    <string name="temp_vi">Temperature (°C)</string>
+    <string name="Do_ph_vi">PH</string>
+    <string name="Hum_vi">Humidity (%)</string>
+    <string name="TDS_vi">Nutrition (ppm)</string>
+    <string name="thong_ke_vi">Statistical</string>
+    <string name="unknown_vi">Null</string>
+    <string name="ON_vi">Turn on</string>
+    <string name="OFF_vi">Turn off</string>
+    <string name="time_slot_vi">Time slot</string>
+    <string name="next_vi">Next</string>
+    <string name="back_vi">Back</string>
+    <string name="stop_vi">Stop</string>
+    <string name="da_cai_dat_vi">Installed</string>
+    <string name="device_status_vi">Devịce</string>
+    <string name="chua_cai_dat_vi">Not installed</string>
+    <string name="Rained">Raining</string>
+    <string name="no_rain">Not raining</string>
+    <!--End Home -->
+
+    <!---substance mass-->
+    <string name="num_dd_used_vi">The amount of solution used (L)</string>
+    <string name="substance_empty_vi">List of fluid types is empty !</string>
+    <string name="substance_delete_title_vi">Clear the solution type details</string>
+
+    <!--forgot password-->
+    <string name="subject_reset_password">Password reseti</string>
+    <string name="send_password_to_email">Login password has been sent to the registration email</string>
+    <string name="error_email">This email does not exist !</string>
+
+    <!--mode-->
+    <string name="delete_mode_title">Delete mode !</string>
+    <string name="time_mode_on">Start time</string>
+    <string name="time_mode_off">End time</string>
+    <string name="time_mode_on_1">Time turned on</string>
+    <string name="time_mode_off_1">Time turned off</string>
+    <string name="detail_mode">Detail mode</string>
+    <string name="choose_mode_for_device">Select mode</string>
+    <string name="ok_vi">OK</string>
+    <string name="everyday_vi">Everyday</string>
+    <string name="choose_vi">Choose</string>
+    <string name="list_mode_isEmpty_vi">Mode list is empty !</string>
+    <string name="setting_mode_for_device_vi">Installed mode !</string>
+    <string name="un_setting_mode_for_device_vi">Mode setting has been removed !</string>
+    <string name="repeat">Repeate</string>
+
+    <!--device category-->
+    <string name="enter_category">Enter the name device category</string>
+
+    <!--chart-->
+    <string name="chart_humidity">The chart humidity</string>
+    <string name="chart_temperature">The chart temperature</string>
+
+    <!--Batch-->
+    <string name="name_batch">Batch</string>
+    <string name="day_start">The day starts</string>
+    <string name="day_end">The day end</string>
+    <string name="total">Total output</string>
+    <string name="name_veg_title">Name veg</string>
+    <string name="amount">The amount</string>
+    <string name="operation">The operation</string>
+    <string name="enter_amount">Enter the output number</string>
+    <string name="batch_sum">Total output</string>
+    <string name="delete_batch">Delete output batch</string>
+    <string name="list_batch_is_empty">The batch list is empty!</string>
+    <string name="list_batch_detail_is_empty">Detailed output list is empty!</string>
+    <string name="delete_batch_detail">Clear output details</string>
+
+    <!--Setting-->
+    <string name="choose_lang">Choose the language</string>
+    <string name="lang_vi">Vietnamese</string>
+    <string name="lang_en">English</string>
+    <string name="lang_ja">Japan</string>
+
+    <!--Setting device-->
+    <string name="not_used_yet_status">Not used yet</string>
+    <string name="using_status">Using</string>
+    <string name="broken_status">Has been damaged</string>
+
+    <!--User-->
+    <string name="list_user_is_empty">User list is empty!</string>
+    <string name="delete_user_name_manager">Delete user</string>
+    <string name="delete_veg_detail">Delete vegetable details</string>
+
+    <!--Status home-->
+    <string name="home_status_safe">Safe</string>
+    <string name="home_status_no_safe">Danger</string>
+
+    <!--message tile-->
+    <string name="title_mode">warning</string>
+    <string name="message_mode_temp">The temperature is in danger </string>
+
+</resources>

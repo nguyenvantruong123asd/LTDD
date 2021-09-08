@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.appveg.farmfamily">
+    <!-- Adding Read External Storage Permission usr pick img -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".NotificationApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.mode.ModeDetailActivity"
+            android:label="Chi tiết chế độ"
+            android:parentActivityName=".ui.mode.ModeDetailActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.mode.ModeDetailActivity" />
+
+        </activity>
+        <activity
+            android:name=".ui.mode.DeviceSettingForGardenActivity"
+            android:label="Danh sách thiết bị"
+            android:parentActivityName=".ui.mode.DeviceSettingForGardenActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.mode.DeviceSettingForGardenActivity" />
+        </activity>
+        <activity
+            android:name=".ui.mode.AddModeForDeviceActivity"
+            android:label="Thêm chế độ"
+            android:parentActivityName=".ui.mode.AddModeForDeviceActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.mode.AddModeForDeviceActivity" />
+        </activity>
+        <activity
+            android:name=".ui.mode.EditModeForDeviceActivity"
+            android:label="Sửa chế độ"
+            android:parentActivityName=".ui.mode.EditModeForDeviceActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.mode.EditModeForDeviceActivity" />
+        </activity>
+        <activity
+            android:name=".ui.share.EditSubstanceMassDetailActivity"
+            android:label="Sửa loại dung dịch"
+            android:parentActivityName=".ui.share.EditSubstanceMassDetailActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.share.EditSubstanceMassDetailActivity" />
+        </activity>
+        <activity
+            android:name=".ui.share.AddSubstanceMassActivity"
+            android:label="Thêm loại dung dịch"
+            android:parentActivityName=".ui.share.AddSubstanceMassActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.share.AddSubstanceMassActivity" />
+        </activity>
+        <activity
+            android:name=".ui.share.SubstanceMassDetailActivity"
+            android:label="Chi tiết loại dung dịch"
+            android:parentActivityName=".ui.share.SubstanceMassDetailActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.share.SubstanceMassDetailActivity" />
+        </activity>
+        <activity
+            android:name=".ui.share.SubstanceMassActivity"
+            android:label="Danh sách loại dung dịch"
+            android:parentActivityName=".ui.share.SubstanceMassActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.share.SubstanceMassActivity" />
+        </activity>
+        <activity
+            android:name=".ui.param.ParamDetailActivity"
+            android:label="Chi tiết tham số"
+            android:parentActivityName=".ui.param.ParamDetailActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.param.ParamDetailActivity" />
+        </activity>
+        <activity
+            android:name=".ui.param.EditParamActivity"
+            android:label="Sửa cài đặt tham số"
+            android:parentActivityName=".ui.param.EditParamActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.param.EditParamActivity" />
+        </activity>
+        <activity
+            android:name=".ui.param.AddParamActivity"
+            android:label="Thêm cài đặt tham số"
+            android:parentActivityName=".ui.param.AddParamActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.param.AddParamActivity" />
+        </activity>
+        <activity
+            android:name=".ui.garden.SelectVegGardenActivity"
+            android:label="Thêm loại rau cho khu vườn"
+            android:parentActivityName=".ui.garden.SelectVegGardenActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.garden.SelectVegGardenActivity" />
+        </activity>
+        <activity
+            android:name=".ui.garden.SelectDeviceGardenActivity"
+            android:label="Thêm thiết bị cho khu vườn"
+            android:parentActivityName=".ui.garden.SelectDeviceGardenActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.garden.SelectDeviceGardenActivity" />
+        </activity>
+        <activity
+            android:name=".ui.garden.AddDeviceForGardenActivity"
+            android:label="Chi tiết khu vườn"
+            android:parentActivityName=".ui.garden.AddDeviceForGardenActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.garden.AddDeviceForGardenActivity" />
+        </activity>
+        <activity
+            android:name=".ui.device_catogory.EditDeviceCategory"
+            android:label="Sửa loại thiết bị"
+            android:parentActivityName=".ui.device_catogory.EditDeviceCategory">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.device_catogory.EditDeviceCategory" />
+        </activity>
+        <activity
+            android:name=".ui.device_catogory.AddDeviceCategory"
+            android:label="Thêm loại thiết bị"
+            android:parentActivityName=".ui.device_catogory.AddDeviceCategory">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.device_catogory.AddDeviceCategory" />
+        </activity>
+        <activity
+            android:name=".ui.device.DeviceDetailActivity"
+            android:label="Chi tiết thiết bị"
+            android:parentActivityName=".ui.device.DeviceDetailActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.device.DeviceDetailActivity" />
+        </activity>
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:label="Cài đặt"
+            android:parentActivityName=".ui.settings.SettingsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.settings.SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".ui.chart.ChartActivity"
+            android:label="Biểu đồ"
+            android:parentActivityName=".ui.chart.ChartActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.chart.ChartActivity" />
+        </activity>
+        <activity
+            android:name=".ui.home.DetailGardenActivity"
+            android:label="Thông tin khu vườn"
+            android:parentActivityName=".ui.home.DetailGardenActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.home.DetailGardenActivity" />
+        </activity>
+        <activity
+            android:name=".ui.vegetable.EditVegetableActivity"
+            android:label="Sửa loại rau"
+            android:parentActivityName=".ui.vegetable.EditVegetableActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.vegetable.EditVegetableActivity" />
+        </activity>
+        <activity
+            android:name=".ui.vegetable.AddVegetableActivity"
+            android:label="Thêm loại rau"
+            android:parentActivityName=".ui.vegetable.AddVegetableActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.vegetable.AddVegetableActivity" />
+        </activity>
+        <activity
+            android:name=".ui.device.EditDeviceActivity"
+            android:label="Sửa thiết bị"
+            android:parentActivityName=".ui.device.EditDeviceActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.device.EditDeviceActivity" />
+        </activity>
+        <activity
+            android:name=".ui.device.AddDeviceActivity"
+            android:label="Thêm thiết bị"
+            android:parentActivityName=".ui.device.AddDeviceActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.device.AddDeviceActivity" />
+        </activity> <!-- <activity -->
+        <!-- android:name=".ui.slideshow.DeviceDetailActivity" -->
+        <!-- android:label="Chi tiết thiết bị" -->
+        <!-- android:parentActivityName=".ui.slideshow.DeviceDetailActivity"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.support.PARENT_ACTIVITY" -->
+        <!-- android:value="com.appveg.farmfamily.ui.slideshow.DeviceDetailActivity" /> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".ui.garden.ThemKhuVuonActivity"
+            android:label="Thêm khu vườn"
+            android:parentActivityName=".ui.garden.ThemKhuVuonActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.garden.ThemKhuVuonActivity" />
+        </activity>
+        <activity
+            android:name=".ui.garden.SuaKhuVuonActivity"
+            android:label="Sửa khu vườn"
+            android:parentActivityName=".ui.garden.ThemKhuVuonActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.garden.ThemKhuVuonActivity" />
+        </activity>
+        <activity
+            android:name=".ui.send.SuaDotSanLuongActivity"
+            android:label="Sửa đợt sản lượng"
+            android:parentActivityName=".ui.send.SuaDotSanLuongActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.send.SuaDotSanLuongActivity" />
+        </activity>
+        <activity
+            android:name=".ui.send.ChiTietSanLuongRauActivity"
+            android:label="Chi tiết sản lượng"
+            android:parentActivityName=".ui.send.ChiTietSanLuongRauActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.send.ChiTietSanLuongRauActivity" />
+        </activity>
+        <activity
+            android:name=".ui.send.ThemDotSanLuongActivity"
+            android:label="Thêm đợt sản lượng "
+            android:parentActivityName=".ui.send.ThemDotSanLuongActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.send.ThemDotSanLuongActivity" />
+        </activity>
+        <activity
+            android:name=".ui.send.ChiTietDotSanLuongActivity"
+            android:label="Danh sách đợt sản lượng"
+            android:parentActivityName=".ui.send.ChiTietDotSanLuongActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.appveg.farmfamily.ui.send.SendFragment" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.login.SignUpActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.login.ForgotPPass"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ui.login.ChangePasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
