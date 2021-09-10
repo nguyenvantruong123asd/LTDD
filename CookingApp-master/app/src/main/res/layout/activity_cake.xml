@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="398dp"
+        android:layout_height="199dp"
+        app:srcCompat="@drawable/cakepage"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="396dp"
+        android:layout_height="666dp"
+        android:layout_marginTop="155dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bgcakepage"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageButton
+        android:id="@+id/btn_backC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back"
+        tools:ignore="MissingConstraints" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="393dp"
+        android:layout_height="390dp"
+        android:layout_marginTop="230dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,ScrollViewCount">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ngan"
+                android:layout_width="10dp"
+                android:layout_height="250dp" />
+
+            <ImageButton
+                android:id="@+id/btn_cake1"
+                android:layout_width="220dp"
+                android:layout_height="390dp"
+                android:background="@drawable/cake1"></ImageButton>
+
+            <ImageView
+                android:id="@+id/ngan1"
+                android:layout_width="40dp"
+                android:layout_height="390dp" />
+
+            <ImageButton
+                android:id="@+id/btn_cake2"
+                android:layout_width="220dp"
+                android:layout_height="390dp"
+                android:background="@drawable/cake2"></ImageButton>
+
+            <ImageView
+                android:id="@+id/ngan2"
+                android:layout_width="40dp"
+                android:layout_height="390dp" />
+
+            <ImageButton
+                android:id="@+id/btn_cake3"
+                android:layout_width="220dp"
+                android:layout_height="390dp"
+                android:background="@drawable/cake3"></ImageButton>
+
+            <ImageView
+                android:id="@+id/ngan3"
+                android:layout_width="40dp"
+                android:layout_height="390dp" />
+
+            <ImageButton
+                android:id="@+id/btn_cake4"
+                android:layout_width="220dp"
+                android:layout_height="390dp"
+                android:background="@drawable/cake4"></ImageButton>
+
+            <ImageView
+                android:id="@+id/ngan4"
+                android:layout_width="40dp"
+                android:layout_height="390dp" />
+
+            <ImageButton
+                android:id="@+id/btn_cake5"
+                android:layout_width="220dp"
+                android:layout_height="390dp"
+                android:background="@drawable/cake5"></ImageButton>
+
+            <ImageView
+                android:id="@+id/ngan6"
+                android:layout_width="40dp"
+                android:layout_height="390dp" />
+
+            <ImageButton
+                android:id="@+id/btn_cake6"
+                android:layout_width="250dp"
+                android:layout_height="390dp"
+                android:background="@drawable/cake6"></ImageButton>
+
+            <ImageView
+                android:id="@+id/ngan7"
+                android:layout_width="20dp"
+                android:layout_height="390dp" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

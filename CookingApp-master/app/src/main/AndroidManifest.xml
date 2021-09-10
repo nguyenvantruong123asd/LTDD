@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.finalexam.cookingapp">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:name=".GlobalStorage"
+        android:theme="@style/Theme.CookingApp">
+        <activity android:name=".view.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.activity.LoginActivity"/>
+        <activity android:name=".view.activity.RegisterActivity"/>
+        <activity android:name=".view.SearchPage"/>
+        <activity android:name=".view.activity.HomeActivity"/>
+        <activity android:name=".view.Infor"/>
+        <activity android:name=".view.Fav"/>
+        <activity android:name=".view.AddedCake"/>
+        <activity android:name=".view.AddedFood"/>
+        <activity android:name=".view.AddedDrink"/>
+        <activity android:name=".view.activity.AddRecipeActivity"/>
+        <activity android:name=".view.activity.AddActivity"/>
+        <activity android:name=".view.Cake"/>
+        <activity android:name=".view.Drink"/>
+        <activity android:name=".view.Food"/>
+        <activity android:name=".view.FreshOrangeCake"/>
+        <activity android:name=".view.PeachTea"/>
+        <activity android:name=".view.Spaghetti"/>
+    </application>
+
+</manifest>

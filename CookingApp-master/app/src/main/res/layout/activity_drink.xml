@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="396dp"
+        android:layout_height="216dp"
+        app:srcCompat="@drawable/drinkpage"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="19dp" />
+
+    <ImageButton
+        android:id="@+id/btn_backD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back"
+        tools:ignore="MissingConstraints" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="393dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="37dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,ScrollViewCount">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btn_drk1"
+                android:layout_width="290dp"
+                android:layout_height="500dp"
+                android:background="@drawable/drk1"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/btn_drk2"
+                android:layout_width="330dp"
+                android:layout_height="500dp"
+                android:background="@drawable/drk2"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/btn_drk3"
+                android:layout_width="290dp"
+                android:layout_height="500dp"
+                android:background="@drawable/drk3"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/btn_drk4"
+                android:layout_width="290dp"
+                android:layout_height="500dp"
+                android:background="@drawable/drk4"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/btn_drk5"
+                android:layout_width="290dp"
+                android:layout_height="500dp"
+                android:background="@drawable/drk5"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/btn_drk6"
+                android:layout_width="290dp"
+                android:layout_height="500dp"
+                android:background="@drawable/drk6"></ImageButton>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
