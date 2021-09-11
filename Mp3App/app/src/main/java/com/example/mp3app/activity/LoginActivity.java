@@ -91,8 +91,8 @@ public class LoginActivity extends AppCompatActivity {
     private void addControls() {
         editUsername = (EditText) findViewById(R.id.editEmail);
         editPassword = (EditText) findViewById(R.id.editPassword);
-        editUsername.setText("Truong");
-        editPassword.setText("truong123");
+        editUsername.setText("vxtruong");
+        editPassword.setText("truong2000");
         btnLogin = (Button) findViewById(R.id.btnSign);
 
 

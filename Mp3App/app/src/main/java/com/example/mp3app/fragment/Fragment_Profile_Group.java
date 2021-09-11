@@ -18,9 +18,9 @@ import com.example.mp3app.R;
 
 public class Fragment_Profile_Group extends Fragment {
     View view;
-    ImageView imgDien, imgPhong, imgTuyen, imgXuan, imgMain;
-    TextView txtDien, txtPhong, txtTuyen, txtXuan, txtPosition1, txtPosition2, txtPosition3, txtPosition4, txtMain;
-    Button btnDien, btnPhong, btnTuyen, btnXuan;
+    ImageView imgTruong, imgLoc, imgMain;
+    TextView txtTruong, txtLoc, txtPosition1, txtPosition2, txtMain;
+    Button btnTruong, btnLoc;
 
 
 
@@ -29,29 +29,21 @@ public class Fragment_Profile_Group extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_profile_group, container, false);
         imgMain = view.findViewById(R.id.imgMain);
-        imgDien = view.findViewById(R.id.imgDien);
-        imgPhong = view.findViewById(R.id.imgPhong);
-        imgTuyen = view.findViewById(R.id.imgTuyen);
-        imgXuan = view.findViewById(R.id.imgXuan);
+        imgTruong = view.findViewById(R.id.imgDien);
+        imgLoc = view.findViewById(R.id.imgPhong);
         txtMain = view.findViewById(R.id.txtMain);
-        txtDien = view.findViewById(R.id.txtDien);
-        txtPhong = view.findViewById(R.id.txtPhong);
-        txtTuyen = view.findViewById(R.id.txtTuyen);
-        txtXuan = view.findViewById(R.id.txtXuan);
+        txtTruong = view.findViewById(R.id.txtDien);
+        txtLoc = view.findViewById(R.id.txtPhong);
         txtPosition1 = view.findViewById(R.id.txtPosition1);
         txtPosition2 = view.findViewById(R.id.txtPosition2);
-        txtPosition3 = view.findViewById(R.id.txtPosition3);
-        txtPosition4 = view.findViewById(R.id.txtPosition4);
-        btnDien = view.findViewById(R.id.btnDien);
-        btnDien.setOnClickListener(new View.OnClickListener() {
+        btnTruong = view.findViewById(R.id.btnTruong);
+        btnTruong.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getContext(), "Đang làm tiếp....", Toast.LENGTH_LONG).show();
             }
         });
-        btnPhong = view.findViewById(R.id.btnPhong);
-        btnTuyen = view.findViewById(R.id.btnTuyen);
-        btnXuan = view.findViewById(R.id.btnXuan);
+        btnLoc = view.findViewById(R.id.btnLoc);
 
 
 
