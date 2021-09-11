@@ -92,7 +92,7 @@ public class LoginActivity extends AppCompatActivity {
         editUsername = (EditText) findViewById(R.id.editEmail);
         editPassword = (EditText) findViewById(R.id.editPassword);
         editUsername.setText("vxtruong");
-        editPassword.setText("truong2000");
+        editPassword.setText("truong1998");
         btnLogin = (Button) findViewById(R.id.btnSign);
 
 

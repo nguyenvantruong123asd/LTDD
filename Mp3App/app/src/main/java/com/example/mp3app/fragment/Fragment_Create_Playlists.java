@@ -45,10 +45,10 @@ public class Fragment_Create_Playlists extends Fragment {
         lvCreatePlaylists = (ListView) view.findViewById(R.id.lvCreatePlaylists);
 //        // B1: Xác định nguồn Adapter
 //        testList = new ArrayList<>();
-//        testList.add("Trần Thanh Điền");
-//        testList.add("Trần Thanh Điền");
-//        testList.add("Trần Thanh Điền");
-//        testList.add("Trần Thanh Điền");
+//        testList.add("Nguyễn Văn truong");
+//        testList.add("Nguyễn Văn truong");
+//        testList.add("Nguyễn Văn truong");
+//        testList.add("Nguyễn Văn truong");
 //
 //        test = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, testList);
 //

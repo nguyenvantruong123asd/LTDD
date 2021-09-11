@@ -173,7 +173,7 @@ public class BaiHatAdapter extends RecyclerView.Adapter<BaiHatAdapter.ViewHolder
                 Toast.makeText(context, storageDir, Toast.LENGTH_LONG).show();
                 File file = new File(storageDir + fileName);
 
-                OutputStream output = new FileOutputStream("C:\\Users\\TRANTHANHDIEN1\\Desktop\\download.mp3");
+                OutputStream output = new FileOutputStream("G:\\truong\\Desktop\\download.mp3");
                 byte data[] = new byte[1024];
                 long total = 0;
                 while ((count = input.read(data)) != -1) {
