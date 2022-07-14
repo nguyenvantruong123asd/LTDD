@@ -1,0 +1,104 @@
+.dialog-course-bought-mobile {
+  font-family: 'Open Sans', sans-serif;
+
+  .link {
+    color: #000;
+    text-decoration: none;
+
+    .avatar {
+    }
+
+    .content {
+      margin-left: 15px;
+
+      .title {
+        font-size: 15px;
+        font-weight: 600;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+      }
+
+      .description {
+        font-size: 15px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+      }
+    }
+  }
+}
+
+.dialog-notification-mobile {
+  font-family: 'Open Sans', sans-serif;
+
+  .avatar {
+  }
+
+  .content {
+    margin-left: 15px;
+
+    .title {
+      font-size: 15px;
+      font-weight: 600;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
+    }
+
+    .description {
+      font-size: 15px;
+      // display: -webkit-box;
+      // -webkit-line-clamp: 3;
+      // -webkit-box-orient: vertical;
+      // overflow: hidden;
+      // text-overflow: ellipsis;
+      word-break: break-word;
+    }
+  }
+}
+
+.custom-dialog {
+  .custom-dialog__title {
+    h2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      i {
+        cursor: pointer;
+        color: #2c3e50;
+        font-size: 25px;
+
+        &:hover {
+          color: #34495e;
+          transform: scale(1.05);
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+.show-all-text {
+  .content {
+    word-break: break-word;
+  }
+}

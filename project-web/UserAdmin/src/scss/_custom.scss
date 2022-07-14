@@ -1,0 +1,48 @@
+// Here you can add other styles
+.image {
+  & > img {
+    width: 10px;
+  }
+}
+
+.tdCenter {
+  text-align: center;
+}
+
+.detailBody {
+  & button {
+    margin-left: 20px;
+  }
+}
+
+.img_thumbnail {
+  width: 100%;
+  margin: 20px 0px 40px 0px;
+}
+
+.row_image {
+  height: 50px;
+  cursor: pointer;
+}
+
+.btn-add-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.fas.fa-circle {
+  &.red {
+    color: #c0392b;
+  }
+
+  &.green {
+    color: #2ecc71;
+  }
+}
+
+.demo-editor.rdw-editor-main {
+  border: solid 1px #000;
+  height: 350px;
+  overflow: auto;
+}

@@ -1,0 +1,35 @@
+.image {
+  & > img {
+    width: 10px;
+  }
+}
+
+.tdCenter {
+  text-align: center;
+}
+
+.detailBody {
+  & button {
+    margin-left: 20px;
+  }
+}
+
+.img_thumbnail {
+  width: 100%;
+  margin: 20px 0px 40px 0px;
+}
+
+.row_image {
+  height: 50px;
+  cursor: pointer;
+}
+
+i.green {
+  color: #2ecc71;
+  margin-left: 10px;
+}
+
+i.red {
+  color: #e74c3c;
+  margin-left: 10px;
+}
