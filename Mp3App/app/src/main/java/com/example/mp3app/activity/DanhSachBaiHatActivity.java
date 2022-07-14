@@ -92,7 +92,7 @@ public class DanhSachBaiHatActivity extends AppCompatActivity {
         // nếu acoustic tồn tại và tên bài hát 0 bằng rỗng
         if (acoustic != null && !acoustic.getTenAlbum().equals("")) {
             Toast.makeText(this, acoustic.getTenAlbum(), Toast.LENGTH_LONG).show();
-            setValueInView(acoustic.getTenAlbum(),acoustic.getHinhAnhAlbum());
+            setValueInView(acoustic.getTenAlbum(), acoustic.getHinhAnhAlbum());
             getDataAcoustic(acoustic.getIdAlbum());
         }
 
@@ -120,7 +120,6 @@ public class DanhSachBaiHatActivity extends AppCompatActivity {
     }
 
 
-
     // sự kiện khi nhấn vào nút icon mp3 (Floating...)
     private void addEvents() {
         floatingActionButton.setEnabled(true);
@@ -145,6 +144,7 @@ public class DanhSachBaiHatActivity extends AppCompatActivity {
         });
 
     }
+
     private void getDataTheLoai(String idTheLoai) {
         DataService dataService = APIService.getService(); // khởi tạo  DataService, lấy đường dẫn
         Call<List<BaiHat>> callBack = dataService.getDataBaiHatTheoTheLoai(idTheLoai);// gọi pthuc trả về mảng các Album
@@ -194,6 +194,7 @@ public class DanhSachBaiHatActivity extends AppCompatActivity {
             }
         });
     }
+
     private void getDataAlbum(String idAlbum) {
         DataService dataService = APIService.getService(); // khởi tạo  DataService, lấy đường dẫn
         Call<List<BaiHat>> callBack = dataService.getDataBaiHatTheoAlbum(idAlbum);// gọi pthuc trả về mảng các Album

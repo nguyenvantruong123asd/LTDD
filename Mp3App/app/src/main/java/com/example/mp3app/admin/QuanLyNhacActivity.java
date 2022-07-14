@@ -84,6 +84,6 @@ public class QuanLyNhacActivity extends AppCompatActivity {
                 Toast.makeText(QuanLyNhacActivity.this, "Thể loại", Toast.LENGTH_LONG).show();
             }
         });
-        
+
     }
 }

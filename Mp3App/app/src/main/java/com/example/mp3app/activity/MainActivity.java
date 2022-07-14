@@ -203,10 +203,10 @@ public class MainActivity extends AppCompatActivity {
             public void onTabSelected(int position) {
                 if (position == 0) {
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Fragment_Home()).commit();
-                } if (position == 1) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Fragment_Search()).commit();
                 }
-                else {
+                if (position == 1) {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Fragment_Search()).commit();
+                } else {
                     Toast.makeText(MainActivity.this, "Click " + position, Toast.LENGTH_SHORT).show();
                 }
             }

@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='Mp3App'
+rootProject.name = 'Mp3App'

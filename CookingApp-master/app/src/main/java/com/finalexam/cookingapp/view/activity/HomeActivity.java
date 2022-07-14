@@ -18,7 +18,7 @@ import com.finalexam.cookingapp.view.Infor;
 import com.finalexam.cookingapp.view.menu.Nav;
 
 public class HomeActivity extends AppCompatActivity {
-    ImageButton cake,food,drink,cakeFOC,drinkPT,ava;
+    ImageButton cake, food, drink, cakeFOC, drinkPT, ava;
     TextView tvHello;
     DatabaseHandler databaseHandler;
 

@@ -113,7 +113,7 @@ public class QuanLyBaiHatAdapter extends BaseAdapter {
         dialog.setPositiveButton("Có", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                    // gọi hàm xoá bên QuanLyBaiHatActivity
+                // gọi hàm xoá bên QuanLyBaiHatActivity
                 context.deleteSong(id);
             }
         });

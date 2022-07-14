@@ -81,7 +81,7 @@ public class QuanLyUserAdapter extends BaseAdapter {
         viewHolder.imgEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, "Id = " +  account.getIdUser(), Toast.LENGTH_LONG).show();
+                Toast.makeText(context, "Id = " + account.getIdUser(), Toast.LENGTH_LONG).show();
                 // gởi dữ liệu bài hát qua màn hình sửa bài hát
                 Intent intent = new Intent(context, UpdateUserActivity.class);
                 intent.putExtra("data", account);

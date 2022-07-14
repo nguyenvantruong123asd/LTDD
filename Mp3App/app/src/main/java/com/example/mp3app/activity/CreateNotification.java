@@ -25,19 +25,20 @@ public class CreateNotification {
     public static final String ACTION_NEXT = "actionnext";
 
     public static Notification notification;
+
     //    public static ArrayList<BaiHat> baiHatArrayList = new ArrayList<>();
-    public static void createNotification(Context context, BaiHat track, int playbutton, int pos, int size){
+    public static void createNotification(Context context, BaiHat track, int playbutton, int pos, int size) {
 //        baiHatArrayList = PlayNhacActivity.listSong;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
 
             NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(context);
-            MediaSessionCompat mediaSessionCompat = new MediaSessionCompat( context, "tag");
+            MediaSessionCompat mediaSessionCompat = new MediaSessionCompat(context, "tag");
 
             Bitmap icon = BitmapFactory.decodeResource(context.getResources(), R.drawable.bgapps);
 
             PendingIntent pendingIntentPrevious;
             int drw_previous;
-            if (pos == 0){
+            if (pos == 0) {
                 pendingIntentPrevious = null;
                 drw_previous = 0;
             } else {
@@ -55,7 +56,7 @@ public class CreateNotification {
 
             PendingIntent pendingIntentNext;
             int drw_next;
-            if (pos == size){
+            if (pos == size) {
                 pendingIntentNext = null;
                 drw_next = 0;
             } else {

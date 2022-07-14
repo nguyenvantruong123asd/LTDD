@@ -19,8 +19,8 @@ public class MessagesAdapter extends RecyclerView.Adapter {
     Context context;
     ArrayList<Messages> messagesArrayList;
 
-    int ITEM_SEND=1;
-    int ITEM_RECIEVE=2;
+    int ITEM_SEND = 1;
+    int ITEM_RECIEVE = 2;
 
     public MessagesAdapter(Context context, ArrayList<Messages> messagesArrayList) {
         this.context = context;
@@ -30,14 +30,11 @@ public class MessagesAdapter extends RecyclerView.Adapter {
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        if(viewType==ITEM_SEND)
-        {
-            View view= LayoutInflater.from(context).inflate(R.layout.senderchatlayout,parent,false);
+        if (viewType == ITEM_SEND) {
+            View view = LayoutInflater.from(context).inflate(R.layout.senderchatlayout, parent, false);
             return new SenderViewHolder(view);
-        }
-        else
-        {
-            View view= LayoutInflater.from(context).inflate(R.layout.recieverchatlayout,parent,false);
+        } else {
+            View view = LayoutInflater.from(context).inflate(R.layout.recieverchatlayout, parent, false);
             return new RecieverViewHolder(view);
         }
     }
@@ -45,25 +42,16 @@ public class MessagesAdapter extends RecyclerView.Adapter {
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
 
-        Messages messages=messagesArrayList.get(position);
-        if(holder.getClass()==SenderViewHolder.class)
-        {
-            SenderViewHolder viewHolder=(SenderViewHolder)holder;
+        Messages messages = messagesArrayList.get(position);
+        if (holder.getClass() == SenderViewHolder.class) {
+            SenderViewHolder viewHolder = (SenderViewHolder) holder;
+            viewHolder.textViewmessaage.setText(messages.getMessage());
+            viewHolder.timeofmessage.setText(messages.getCurrenttime());
+        } else {
+            RecieverViewHolder viewHolder = (RecieverViewHolder) holder;
             viewHolder.textViewmessaage.setText(messages.getMessage());
             viewHolder.timeofmessage.setText(messages.getCurrenttime());
         }
-        else
-        {
-            RecieverViewHolder viewHolder=(RecieverViewHolder)holder;
-            viewHolder.textViewmessaage.setText(messages.getMessage());
-            viewHolder.timeofmessage.setText(messages.getCurrenttime());
-        }
-
-
-
-
-
-
 
 
     }
@@ -71,14 +59,10 @@ public class MessagesAdapter extends RecyclerView.Adapter {
 
     @Override
     public int getItemViewType(int position) {
-        Messages messages=messagesArrayList.get(position);
-        if(FirebaseAuth.getInstance().getCurrentUser().getUid().equals(messages.getSenderId()))
-
-        {
-            return  ITEM_SEND;
-        }
-        else
-        {
+        Messages messages = messagesArrayList.get(position);
+        if (FirebaseAuth.getInstance().getCurrentUser().getUid().equals(messages.getSenderId())) {
+            return ITEM_SEND;
+        } else {
             return ITEM_RECIEVE;
         }
     }
@@ -89,14 +73,7 @@ public class MessagesAdapter extends RecyclerView.Adapter {
     }
 
 
-
-
-
-
-
-
-    class SenderViewHolder extends RecyclerView.ViewHolder
-    {
+    class SenderViewHolder extends RecyclerView.ViewHolder {
 
         TextView textViewmessaage;
         TextView timeofmessage;
@@ -104,13 +81,12 @@ public class MessagesAdapter extends RecyclerView.Adapter {
 
         public SenderViewHolder(@NonNull View itemView) {
             super(itemView);
-            textViewmessaage=itemView.findViewById(R.id.sendermessage);
-            timeofmessage=itemView.findViewById(R.id.timeofmessage);
+            textViewmessaage = itemView.findViewById(R.id.sendermessage);
+            timeofmessage = itemView.findViewById(R.id.timeofmessage);
         }
     }
 
-    class RecieverViewHolder extends RecyclerView.ViewHolder
-    {
+    class RecieverViewHolder extends RecyclerView.ViewHolder {
 
         TextView textViewmessaage;
         TextView timeofmessage;
@@ -118,12 +94,10 @@ public class MessagesAdapter extends RecyclerView.Adapter {
 
         public RecieverViewHolder(@NonNull View itemView) {
             super(itemView);
-            textViewmessaage=itemView.findViewById(R.id.sendermessage);
-            timeofmessage=itemView.findViewById(R.id.timeofmessage);
+            textViewmessaage = itemView.findViewById(R.id.sendermessage);
+            timeofmessage = itemView.findViewById(R.id.timeofmessage);
         }
     }
-
-
 
 
 }

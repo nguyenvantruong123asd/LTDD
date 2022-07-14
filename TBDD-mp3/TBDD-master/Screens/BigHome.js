@@ -6,8 +6,8 @@ import Home from './Home.js';
 import ListProduct from './ListProduct.js';
 
 const Appstack = createStackNavigator({
-  Home: Home,
-  ListProduct: ListProduct,
+    Home: Home,
+    ListProduct: ListProduct,
 });
 
 const BigHome = createAppContainer(Appstack);

@@ -49,6 +49,7 @@ public class QuanLyBaiHatActivity extends AppCompatActivity {
         getData(urlData);
         addEvents();
     }
+
     public void getData(String urlData) {
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         // lấy dữ liệu nên dùng GET
@@ -97,6 +98,7 @@ public class QuanLyBaiHatActivity extends AppCompatActivity {
         );
         requestQueue.add(jsonArrayRequest);
     }
+
     // Hàm xoá bài hát bên phần Quản Lý BaiHat
     public void deleteSong(final int id) {
         // Client gửi request lên Server
@@ -137,12 +139,14 @@ public class QuanLyBaiHatActivity extends AppCompatActivity {
         // thêm các request vào hàng đợi yêu cầu và chờ thực hiện
         requestQueue.add(stringRequest);
     }
+
     // tạo option menu (thanh MenuBar)
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_add_music, menu);
         return true;
     }
+
     // hàm xử lý khi chọn menu item nào
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -176,9 +180,9 @@ public class QuanLyBaiHatActivity extends AppCompatActivity {
     }
 
     private void addControls() {
-        toolbar = (Toolbar)findViewById(R.id.toolBarQuanLyBaiHat);
+        toolbar = (Toolbar) findViewById(R.id.toolBarQuanLyBaiHat);
         lvQuanLyBaiHat = (ListView) findViewById(R.id.lvQuanLyBaiHat);
         listBaiHat = new ArrayList<>();
-        
+
     }
 }

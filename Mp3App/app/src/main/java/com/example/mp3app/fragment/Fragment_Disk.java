@@ -43,6 +43,7 @@ public class Fragment_Disk extends Fragment {
 
         return view;
     }
+
     public void playNhac(String hinhanh) {
         Picasso.get().load(hinhanh).into(circleImageView);
     }

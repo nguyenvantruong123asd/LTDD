@@ -54,6 +54,7 @@ public class Fragment_Album_Hot extends Fragment {
         getData();
         return view;
     }
+
     // hàm lấy dữ liệu album
     private void getData() {
         DataService dataService = APIService.getService(); // khởi tạo  DataService, lấy đường dẫn

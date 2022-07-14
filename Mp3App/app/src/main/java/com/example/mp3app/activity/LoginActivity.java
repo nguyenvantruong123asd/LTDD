@@ -88,6 +88,7 @@ public class LoginActivity extends AppCompatActivity {
         });
 
     }
+
     private void addControls() {
         editUsername = (EditText) findViewById(R.id.editEmail);
         editPassword = (EditText) findViewById(R.id.editPassword);

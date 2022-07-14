@@ -3,7 +3,7 @@ package com.example.mychatapptutorial;
 public class userprofile {
 
 
-    public String username,userUID;
+    public String username, userUID;
 
     public userprofile() {
     }

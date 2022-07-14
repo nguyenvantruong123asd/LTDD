@@ -14,8 +14,9 @@ import com.finalexam.cookingapp.view.activity.LoginActivity;
 import com.finalexam.cookingapp.view.activity.RegisterActivity;
 
 public class RememberLogin extends AppCompatActivity {
-    TextView acc,regis;
-    ImageButton people1,people2;
+    TextView acc, regis;
+    ImageButton people1, people2;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rememberlogin);
@@ -24,7 +25,7 @@ public class RememberLogin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(RememberLogin.this,
-                                         RegisterActivity.class));
+                        RegisterActivity.class));
             }
         });
         acc = findViewById(R.id.tv_another);
@@ -38,15 +39,15 @@ public class RememberLogin extends AppCompatActivity {
         people1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RememberLogin.this,Account.class));
-                overridePendingTransition(R.anim.slideinleft,R.anim.slideoutleft);
+                startActivity(new Intent(RememberLogin.this, Account.class));
+                overridePendingTransition(R.anim.slideinleft, R.anim.slideoutleft);
             }
         });
         people2 = findViewById(R.id.people2);
         people2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RememberLogin.this,HomePage.class));
+                startActivity(new Intent(RememberLogin.this, HomePage.class));
             }
         });
     }

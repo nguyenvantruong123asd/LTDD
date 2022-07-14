@@ -11,7 +11,8 @@ import com.finalexam.cookingapp.R;
 import com.finalexam.cookingapp.view.activity.HomeActivity;
 
 public class Drink extends AppCompatActivity {
-    ImageButton drk,back;
+    ImageButton drk, back;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drink);
@@ -19,7 +20,7 @@ public class Drink extends AppCompatActivity {
         drk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Drink.this,PeachTea.class));
+                startActivity(new Intent(Drink.this, PeachTea.class));
             }
         });
         back = findViewById(R.id.btn_backD);

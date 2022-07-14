@@ -108,7 +108,7 @@ public class QuanLyUserActivity extends AppCompatActivity {
     }
 
     // Hàm xoá user bên phần Quản Lý User
-    public void deleteUser (final int id) {
+    public void deleteUser(final int id) {
         // Client gửi request lên Server
         // Volley là thư viện để truyền data qua mạng
         RequestQueue requestQueue = Volley.newRequestQueue(this);

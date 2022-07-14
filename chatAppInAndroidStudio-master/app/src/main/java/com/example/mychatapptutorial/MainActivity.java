@@ -23,7 +23,6 @@ import java.util.concurrent.TimeUnit;
 public class MainActivity extends AppCompatActivity {
 
 
-
     EditText mgetphonenumber;
     android.widget.Button msendotp;
     CountryCodePicker mcountrycodepicker;
@@ -34,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
     ProgressBar mprogressbarofmain;
 
 
-
     PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
     String codesent;
 
@@ -42,19 +40,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mcountrycodepicker=findViewById(R.id.countrycodepicker);
-        msendotp=findViewById(R.id.sendotpbutton);
-        mgetphonenumber=findViewById(R.id.getphonenumber);
-        mprogressbarofmain=findViewById(R.id.progressbarofmain);
+        mcountrycodepicker = findViewById(R.id.countrycodepicker);
+        msendotp = findViewById(R.id.sendotpbutton);
+        mgetphonenumber = findViewById(R.id.getphonenumber);
+        mprogressbarofmain = findViewById(R.id.progressbarofmain);
 
-        firebaseAuth=FirebaseAuth.getInstance();
+        firebaseAuth = FirebaseAuth.getInstance();
 
-        countrycode=mcountrycodepicker.getSelectedCountryCodeWithPlus();
+        countrycode = mcountrycodepicker.getSelectedCountryCodeWithPlus();
 
         mcountrycodepicker.setOnCountryChangeListener(new CountryCodePicker.OnCountryChangeListener() {
             @Override
             public void onCountrySelected() {
-                countrycode=mcountrycodepicker.getSelectedCountryCodeWithPlus();
+                countrycode = mcountrycodepicker.getSelectedCountryCodeWithPlus();
             }
         });
 
@@ -62,22 +60,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String number;
-                number=mgetphonenumber.getText().toString();
-                if(number.isEmpty())
-                {
-                    Toast.makeText(getApplicationContext(),"Please Enter YOur number",Toast.LENGTH_SHORT).show();
-                }
-                else if(number.length()<10)
-                {
-                    Toast.makeText(getApplicationContext(),"Please Enter correct number",Toast.LENGTH_SHORT).show();
-                }
-                else
-                {
+                number = mgetphonenumber.getText().toString();
+                if (number.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Please Enter YOur number", Toast.LENGTH_SHORT).show();
+                } else if (number.length() < 10) {
+                    Toast.makeText(getApplicationContext(), "Please Enter correct number", Toast.LENGTH_SHORT).show();
+                } else {
 
                     mprogressbarofmain.setVisibility(View.VISIBLE);
-                    phonenumber=countrycode+number;
+                    phonenumber = countrycode + number;
 
-                    PhoneAuthOptions options=PhoneAuthOptions.newBuilder(firebaseAuth)
+                    PhoneAuthOptions options = PhoneAuthOptions.newBuilder(firebaseAuth)
                             .setPhoneNumber(phonenumber)
                             .setTimeout(60L, TimeUnit.SECONDS)
                             .setActivity(MainActivity.this)
@@ -88,13 +81,11 @@ public class MainActivity extends AppCompatActivity {
                     PhoneAuthProvider.verifyPhoneNumber(options);
 
 
-
                 }
 
 
             }
         });
-
 
 
         mCallbacks = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
@@ -112,15 +103,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCodeSent(@NonNull String s, @NonNull PhoneAuthProvider.ForceResendingToken forceResendingToken) {
                 super.onCodeSent(s, forceResendingToken);
-                Toast.makeText(getApplicationContext(),"OTP is Sent",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "OTP is Sent", Toast.LENGTH_SHORT).show();
                 mprogressbarofmain.setVisibility(View.INVISIBLE);
-                codesent=s;
-                Intent intent=new Intent(MainActivity.this,otpAuthentication.class);
-                intent.putExtra("otp",codesent);
+                codesent = s;
+                Intent intent = new Intent(MainActivity.this, otpAuthentication.class);
+                intent.putExtra("otp", codesent);
                 startActivity(intent);
             }
         };
-
 
 
     }
@@ -129,16 +119,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        if(FirebaseAuth.getInstance().getCurrentUser()!=null)
-        {
-            Intent intent=new Intent(MainActivity.this,chatActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        if (FirebaseAuth.getInstance().getCurrentUser() != null) {
+            Intent intent = new Intent(MainActivity.this, chatActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
         }
-
-
-
-
 
 
     }

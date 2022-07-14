@@ -23,7 +23,6 @@ public class Fragment_Profile_Group extends Fragment {
     Button btnTruong, btnLoc;
 
 
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -44,7 +43,6 @@ public class Fragment_Profile_Group extends Fragment {
             }
         });
         btnLoc = view.findViewById(R.id.btnLoc);
-
 
 
         return view;

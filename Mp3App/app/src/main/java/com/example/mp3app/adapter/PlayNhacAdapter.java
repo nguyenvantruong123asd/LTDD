@@ -54,6 +54,7 @@ public class PlayNhacAdapter extends RecyclerView.Adapter<PlayNhacAdapter.ViewHo
     class ViewHolder extends RecyclerView.ViewHolder {
         TextView txtIndexSong, txtNameSong, txtAuthorSong;
         ImageView imgSong;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             txtIndexSong = itemView.findViewById(R.id.txtIndexPlayNhac);

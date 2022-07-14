@@ -61,8 +61,9 @@ public class DanhSachTheLoaiTheoChuDeActivity extends AppCompatActivity {
         setSupportActionBar(toolbar); // thay thế tool bar vì đã bỏ action bar
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); // nút mũi tên quay lại
         getSupportActionBar().setTitle(chuDe.getTenChuDe());
-        
+
     }
+
     // lấy data tất cả album
     private void getDataAllAlbum() {
         DataService dataService = APIService.getService(); // khởi tạo  DataService, lấy đường dẫn

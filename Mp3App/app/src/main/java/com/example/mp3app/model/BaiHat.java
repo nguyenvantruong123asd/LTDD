@@ -39,6 +39,7 @@ public class BaiHat implements Parcelable {
         luotThich = in.readString();
         loiBaiHat = in.readString();
     }
+
     public BaiHat(String idBaiHat, String tenBaiHat, String caSi, String hinhCaSi) {
         this.idBaiHat = idBaiHat;
         this.tenBaiHat = tenBaiHat;

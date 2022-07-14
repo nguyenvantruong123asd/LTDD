@@ -54,23 +54,23 @@ public class AdminActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Toast.makeText(AdminActivity.this, "" + listFunctionAdmin.get(position).getTitle(), Toast.LENGTH_LONG).show();
-                if (position==0) {
+                if (position == 0) {
                     Intent intent = new Intent(AdminActivity.this, QuanLyUserActivity.class);
                     startActivity(intent);
                 }
-                if (position==1) {
+                if (position == 1) {
                     Intent intent = new Intent(AdminActivity.this, QuanLyNhacActivity.class);
                     startActivity(intent);
                 }
-                if (position==2) {
+                if (position == 2) {
 //                    Intent intent = new Intent(AdminActivity.this, QuanLyUserActivity.class);
 //                    startActivity(intent);
                 }
-                if (position==3) {
+                if (position == 3) {
 //                    Intent intent = new Intent(AdminActivity.this, QuanLyUserActivity.class);
 //                    startActivity(intent);
                 }
-                if (position==4) {
+                if (position == 4) {
 //                    Intent intent = new Intent(AdminActivity.this, QuanLyUserActivity.class);
 //                    startActivity(intent);
                 }

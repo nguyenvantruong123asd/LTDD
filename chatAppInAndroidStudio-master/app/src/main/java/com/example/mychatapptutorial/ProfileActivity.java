@@ -50,21 +50,20 @@ public class ProfileActivity extends AppCompatActivity {
     FirebaseStorage firebaseStorage;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        mviewuserimageinimageview=findViewById(R.id.viewuserimageinimageview);
-        mviewusername=findViewById(R.id.viewusername);
-        mmovetoupdateprofile=findViewById(R.id.movetoupdateprofile);
-        firebaseFirestore=FirebaseFirestore.getInstance();
-        mtoolbarofviewprofile=findViewById(R.id.toolbarofviewprofile);
-        mbackbuttonofviewprofile=findViewById(R.id.backbuttonofviewprofile);
-        firebaseDatabase=FirebaseDatabase.getInstance();
-        firebaseAuth=FirebaseAuth.getInstance();
-        firebaseStorage=FirebaseStorage.getInstance();
+        mviewuserimageinimageview = findViewById(R.id.viewuserimageinimageview);
+        mviewusername = findViewById(R.id.viewusername);
+        mmovetoupdateprofile = findViewById(R.id.movetoupdateprofile);
+        firebaseFirestore = FirebaseFirestore.getInstance();
+        mtoolbarofviewprofile = findViewById(R.id.toolbarofviewprofile);
+        mbackbuttonofviewprofile = findViewById(R.id.backbuttonofviewprofile);
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        firebaseAuth = FirebaseAuth.getInstance();
+        firebaseStorage = FirebaseStorage.getInstance();
 
 
         setSupportActionBar(mtoolbarofviewprofile);
@@ -77,28 +76,28 @@ public class ProfileActivity extends AppCompatActivity {
         });
 
 
-        storageReference=firebaseStorage.getReference();
+        storageReference = firebaseStorage.getReference();
         storageReference.child("Images").child(firebaseAuth.getUid()).child("Profile Pic").getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
-                ImageURIacessToken=uri.toString();
+                ImageURIacessToken = uri.toString();
                 Picasso.get().load(uri).into(mviewuserimageinimageview);
 
             }
         });
 
-        DatabaseReference databaseReference=firebaseDatabase.getReference(firebaseAuth.getUid());
+        DatabaseReference databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid());
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                userprofile muserprofile=snapshot.getValue(userprofile.class);
+                userprofile muserprofile = snapshot.getValue(userprofile.class);
                 mviewusername.setText(muserprofile.getUsername());
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
-                Toast.makeText(getApplicationContext(),"Failed To Fetch",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Failed To Fetch", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -106,13 +105,11 @@ public class ProfileActivity extends AppCompatActivity {
         mmovetoupdateprofile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(ProfileActivity.this,UpdateProfile.class);
-                intent.putExtra("nameofuser",mviewusername.getText().toString());
+                Intent intent = new Intent(ProfileActivity.this, UpdateProfile.class);
+                intent.putExtra("nameofuser", mviewusername.getText().toString());
                 startActivity(intent);
             }
         });
-
-
 
 
     }
@@ -121,14 +118,13 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        DocumentReference documentReference=firebaseFirestore.collection("Users").document(firebaseAuth.getUid());
-        documentReference.update("status","Offline").addOnSuccessListener(new OnSuccessListener<Void>() {
+        DocumentReference documentReference = firebaseFirestore.collection("Users").document(firebaseAuth.getUid());
+        documentReference.update("status", "Offline").addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
-                Toast.makeText(getApplicationContext(),"Now User is Offline",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Now User is Offline", Toast.LENGTH_SHORT).show();
             }
         });
-
 
 
     }
@@ -136,11 +132,11 @@ public class ProfileActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        DocumentReference documentReference=firebaseFirestore.collection("Users").document(firebaseAuth.getUid());
-        documentReference.update("status","Online").addOnSuccessListener(new OnSuccessListener<Void>() {
+        DocumentReference documentReference = firebaseFirestore.collection("Users").document(firebaseAuth.getUid());
+        documentReference.update("status", "Online").addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
-                Toast.makeText(getApplicationContext(),"Now User is Online",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Now User is Online", Toast.LENGTH_SHORT).show();
             }
         });
 

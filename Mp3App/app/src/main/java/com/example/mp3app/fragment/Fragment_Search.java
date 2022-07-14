@@ -71,6 +71,7 @@ public class Fragment_Search extends Fragment {
         });
         super.onCreateOptionsMenu(menu, menuInflater);
     }
+
     public void searchData(String query) {
         DataService dataService = APIService.getService();
         // chỉ update 1 lần 1 lượt thích, update theo id bài hát
@@ -80,7 +81,7 @@ public class Fragment_Search extends Fragment {
             @Override
             public void onResponse(Call<List<BaiHat>> call, Response<List<BaiHat>> response) {
                 ArrayList<BaiHat> listBaiHat = (ArrayList<BaiHat>) response.body();
-                if (listBaiHat.size()>0) {
+                if (listBaiHat.size() > 0) {
                     searchBaiHatAdapter = new SearchBaiHatAdapter(getActivity(), listBaiHat);
                     LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
                     rvSearch.setLayoutManager(linearLayoutManager);

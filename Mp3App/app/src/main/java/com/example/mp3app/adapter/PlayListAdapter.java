@@ -20,6 +20,7 @@ public class PlayListAdapter extends ArrayAdapter<PlayList> {
     public PlayListAdapter(@NonNull Context context, int resource, @NonNull List<PlayList> objects) {
         super(context, resource, objects);
     }
+
     // class view holder để tăng tóc độ ánh xạ các component
     class ViewHolder {
         TextView txtNamePlayList;

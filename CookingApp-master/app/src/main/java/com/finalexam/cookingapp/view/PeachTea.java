@@ -11,6 +11,7 @@ import com.finalexam.cookingapp.R;
 
 public class PeachTea extends AppCompatActivity {
     ImageButton back;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_peachtea);
@@ -18,7 +19,7 @@ public class PeachTea extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(PeachTea.this,Drink.class));
+                startActivity(new Intent(PeachTea.this, Drink.class));
             }
         });
     }

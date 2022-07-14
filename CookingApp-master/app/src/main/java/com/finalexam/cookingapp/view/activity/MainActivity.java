@@ -12,7 +12,7 @@ import com.finalexam.cookingapp.database.DatabaseHandler;
 import com.finalexam.cookingapp.model.entity.User;
 
 public class MainActivity extends AppCompatActivity {
-    Button login,register;
+    Button login, register;
     DatabaseHandler databaseHandler;
 
     @Override

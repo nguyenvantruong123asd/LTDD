@@ -11,6 +11,7 @@ import com.finalexam.cookingapp.R;
 
 public class FreshOrangeCake extends AppCompatActivity {
     ImageButton back;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_freshorangecake);
@@ -18,7 +19,7 @@ public class FreshOrangeCake extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(FreshOrangeCake.this,Cake.class));
+                startActivity(new Intent(FreshOrangeCake.this, Cake.class));
             }
         });
     }

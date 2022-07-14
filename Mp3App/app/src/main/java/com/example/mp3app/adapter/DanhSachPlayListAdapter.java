@@ -14,6 +14,7 @@ import com.example.mp3app.activity.DanhSachBaiHatActivity;
 import com.example.mp3app.model.PlayList;
 import com.example.mp3app.R;
 import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 
 public class DanhSachPlayListAdapter extends RecyclerView.Adapter<DanhSachPlayListAdapter.ViewHolder> {

@@ -16,10 +16,11 @@ import com.finalexam.cookingapp.view.activity.LoginActivity;
 import com.finalexam.cookingapp.view.activity.RegisterActivity;
 
 public class Account extends AppCompatActivity {
-    ImageButton people1,back;
+    ImageButton people1, back;
     EditText pass;
-    TextView acc,regis;
+    TextView acc, regis;
     Button login;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
@@ -27,8 +28,8 @@ public class Account extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Account.this,RememberLogin.class));
-                overridePendingTransition(R.anim.slideinleft,R.anim.slideoutleft);
+                startActivity(new Intent(Account.this, RememberLogin.class));
+                overridePendingTransition(R.anim.slideinleft, R.anim.slideoutleft);
             }
         });
         regis = findViewById(R.id.tv_registerr);
@@ -55,7 +56,7 @@ public class Account extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Account.this,HomePage.class));
+                startActivity(new Intent(Account.this, HomePage.class));
             }
         });
     }

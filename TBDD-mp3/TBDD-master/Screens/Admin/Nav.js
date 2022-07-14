@@ -7,9 +7,9 @@ import Edit from './Edit';
 import Create from './createPro.js'
 
 const Appstack = createStackNavigator({
-  ShowProduct: ShowProduct,
-  Edit: Edit,
-  Create: Create,
+    ShowProduct: ShowProduct,
+    Edit: Edit,
+    Create: Create,
 });
 
 const Nav = createAppContainer(Appstack);

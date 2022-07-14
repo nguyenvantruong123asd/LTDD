@@ -37,7 +37,6 @@ public interface DataService {
     Call<ChuDeVaTheLoai> getCategoryMusic();
 
 
-
     // lấy dữ liệu album
     @GET("albumhot.php")
     Call<List<Album>> getDataAlbum();

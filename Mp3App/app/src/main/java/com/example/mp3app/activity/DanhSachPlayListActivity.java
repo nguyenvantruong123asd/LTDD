@@ -27,7 +27,7 @@ public class DanhSachPlayListActivity extends AppCompatActivity {
     RecyclerView rvDanhSachPlayList;
     ArrayList<PlayList> playLists;
     DanhSachPlayListAdapter danhSachPlayListAdapter;
-    
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

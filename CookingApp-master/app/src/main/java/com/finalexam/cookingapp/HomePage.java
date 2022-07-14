@@ -16,7 +16,8 @@ import com.finalexam.cookingapp.view.activity.LoginActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class HomePage extends AppCompatActivity {
-    ImageButton cake,food,drink,cakeFOC,drinkPT,ava;
+    ImageButton cake, food, drink, cakeFOC, drinkPT, ava;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);

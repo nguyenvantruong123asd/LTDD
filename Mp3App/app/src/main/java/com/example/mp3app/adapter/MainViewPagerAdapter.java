@@ -10,8 +10,8 @@ import java.util.ArrayList;
 public class MainViewPagerAdapter extends FragmentPagerAdapter {
     private ArrayList<Fragment> listFragment = new ArrayList<>(); // danh sách chứa các Fragment
     private ArrayList<String> listTitle = new ArrayList<>(); // danh sách các title của từng Fragment
-    public MainViewPagerAdapter(FragmentManager fm)
-    {
+
+    public MainViewPagerAdapter(FragmentManager fm) {
         super(fm);
     }
 
@@ -24,7 +24,7 @@ public class MainViewPagerAdapter extends FragmentPagerAdapter {
     // lấy bao nhiêu Fragment
     @Override
     public int getCount() {
-       return listFragment.size();
+        return listFragment.size();
     }
 
     // phương thức thêm 1 Fragment với title tương ứng của nó

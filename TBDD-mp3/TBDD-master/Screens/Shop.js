@@ -21,72 +21,75 @@ import search from '../Assest/Icon/caa.jpg';
 import search1 from '../Assest/Icon/caa1.jpg';
 
 export default class Shop extends Component {
-  openMenu() {
-    const {open} = this.props;
-    open();
-  }
-  static navigationOptions = {
-    header: null,
-  };
-  constructor(props) {
-    super(props);
+    openMenu() {
+        const {open} = this.props;
+        open();
+    }
 
-    this.state = {
-      selectedTab: 'homeNav',
+    static navigationOptions = {
+        header: null,
     };
-  }
-  render() {
-    return (
-      <View style={{flex: 1}}>
-        <View style={{flex: 18}}>
-          <TabNavigator>
-            <TabNavigator.Item
-              selected={this.state.selectedTab === 'homeNav'}
-              renderIcon={() => <Image source={home0} style={styles.icon} />}
-              renderSelectedIcon={() => (
-                <Image source={home} style={styles.icon} />
-              )}
-              badgeText="1"
-              selectedTitleStyle={{color: '#34B089', fontSize: 11}}
-              onPress={() => this.setState({selectedTab: 'homeNav'})}>
-              <HomeNav />
-            </TabNavigator.Item>
-            <TabNavigator.Item
-              selected={this.state.selectedTab === 'CataNav'}
-              renderIcon={() => <Image source={cara1} style={styles.icon} />}
-              renderSelectedIcon={() => (
-                <Image source={cara} style={styles.icon} />
-              )}
-              onPress={() => this.setState({selectedTab: 'CataNav'})}>
-              <CataNav />
-            </TabNavigator.Item>
-            <TabNavigator.Item
-              selected={this.state.selectedTab === 'cart'}
-              renderIcon={() => <Image source={search1} style={styles.icon} />}
-              renderSelectedIcon={() => (
-                <Image source={search} style={styles.icon} />
-              )}
-              onPress={() => this.setState({selectedTab: 'cart'})}>
-              <CartNav />
-            </TabNavigator.Item>
-            <TabNavigator.Item
-              selected={this.state.selectedTab === 'accNav'}
-              renderIcon={() => <Image source={acc1} style={styles.icon} />}
-              renderSelectedIcon={() => (
-                <Image source={acc} style={styles.icon} />
-              )}
-              onPress={() => this.setState({selectedTab: 'accNav'})}>
-              <AccNav />
-            </TabNavigator.Item>
-          </TabNavigator>
-        </View>
-      </View>
-    );
-  }
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            selectedTab: 'homeNav',
+        };
+    }
+
+    render() {
+        return (
+            <View style={{flex: 1}}>
+                <View style={{flex: 18}}>
+                    <TabNavigator>
+                        <TabNavigator.Item
+                            selected={this.state.selectedTab === 'homeNav'}
+                            renderIcon={() => <Image source={home0} style={styles.icon}/>}
+                            renderSelectedIcon={() => (
+                                <Image source={home} style={styles.icon}/>
+                            )}
+                            badgeText="1"
+                            selectedTitleStyle={{color: '#34B089', fontSize: 11}}
+                            onPress={() => this.setState({selectedTab: 'homeNav'})}>
+                            <HomeNav/>
+                        </TabNavigator.Item>
+                        <TabNavigator.Item
+                            selected={this.state.selectedTab === 'CataNav'}
+                            renderIcon={() => <Image source={cara1} style={styles.icon}/>}
+                            renderSelectedIcon={() => (
+                                <Image source={cara} style={styles.icon}/>
+                            )}
+                            onPress={() => this.setState({selectedTab: 'CataNav'})}>
+                            <CataNav/>
+                        </TabNavigator.Item>
+                        <TabNavigator.Item
+                            selected={this.state.selectedTab === 'cart'}
+                            renderIcon={() => <Image source={search1} style={styles.icon}/>}
+                            renderSelectedIcon={() => (
+                                <Image source={search} style={styles.icon}/>
+                            )}
+                            onPress={() => this.setState({selectedTab: 'cart'})}>
+                            <CartNav/>
+                        </TabNavigator.Item>
+                        <TabNavigator.Item
+                            selected={this.state.selectedTab === 'accNav'}
+                            renderIcon={() => <Image source={acc1} style={styles.icon}/>}
+                            renderSelectedIcon={() => (
+                                <Image source={acc} style={styles.icon}/>
+                            )}
+                            onPress={() => this.setState({selectedTab: 'accNav'})}>
+                            <AccNav/>
+                        </TabNavigator.Item>
+                    </TabNavigator>
+                </View>
+            </View>
+        );
+    }
 }
 const styles = StyleSheet.create({
-  icon: {
-    height: 30,
-    width: 30,
-  },
+    icon: {
+        height: 30,
+        width: 30,
+    },
 });

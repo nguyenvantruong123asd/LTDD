@@ -10,13 +10,9 @@ public class PagerAdapter extends FragmentPagerAdapter {
     int tabcount;
 
 
-
-
     public PagerAdapter(@NonNull FragmentManager fm, int behavior) {
         super(fm, behavior);
-        tabcount=behavior;
-
-
+        tabcount = behavior;
 
 
     }
@@ -24,8 +20,7 @@ public class PagerAdapter extends FragmentPagerAdapter {
     @NonNull
     @Override
     public Fragment getItem(int position) {
-        switch (position)
-        {
+        switch (position) {
             case 0:
                 return new chatFragment();
 
@@ -41,7 +36,6 @@ public class PagerAdapter extends FragmentPagerAdapter {
             default:
                 return null;
         }
-
 
 
     }

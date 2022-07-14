@@ -11,6 +11,7 @@ import com.finalexam.cookingapp.R;
 
 public class Spaghetti extends AppCompatActivity {
     ImageButton back;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spagetti);
@@ -18,7 +19,7 @@ public class Spaghetti extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Spaghetti.this,Food.class));
+                startActivity(new Intent(Spaghetti.this, Food.class));
             }
         });
     }

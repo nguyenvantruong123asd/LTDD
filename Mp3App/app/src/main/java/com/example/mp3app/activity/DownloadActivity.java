@@ -60,7 +60,7 @@ public class DownloadActivity extends Activity {
 
     /**
      * Showing Dialog
-     * */
+     */
     @Override
     protected Dialog onCreateDialog(int id) {
         switch (id) {
@@ -80,13 +80,13 @@ public class DownloadActivity extends Activity {
 
     /**
      * Background Async Task to download file
-     * */
+     */
     class DownloadFileFromURL extends AsyncTask<String, String, String> {
 
         /**
          * Before starting background thread
          * Show Progress Bar Dialog
-         * */
+         */
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
@@ -95,7 +95,7 @@ public class DownloadActivity extends Activity {
 
         /**
          * Downloading file in background thread
-         * */
+         */
         @Override
         protected String doInBackground(String... f_url) {
             int count;
@@ -120,7 +120,7 @@ public class DownloadActivity extends Activity {
                     total += count;
                     // publishing the progress....
                     // After this onProgressUpdate will be called
-                    publishProgress(""+(int)((total*100)/lenghtOfFile));
+                    publishProgress("" + (int) ((total * 100) / lenghtOfFile));
 
                     // writing data to file
                     output.write(data, 0, count);
@@ -142,7 +142,7 @@ public class DownloadActivity extends Activity {
 
         /**
          * Updating progress bar
-         * */
+         */
         protected void onProgressUpdate(String... progress) {
             // setting progress percentage
             pDialog.setProgress(Integer.parseInt(progress[0]));
@@ -151,7 +151,7 @@ public class DownloadActivity extends Activity {
         /**
          * After completing background task
          * Dismiss the progress dialog
-         * **/
+         **/
         @Override
         protected void onPostExecute(String file_url) {
             // dismiss the dialog after the file was downloaded

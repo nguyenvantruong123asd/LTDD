@@ -13,21 +13,25 @@ import java.util.List;
 public class FoodCategory extends RecyclerView.Adapter<FoodCategory.FoodViewHolder> {
     private List<Food> foods;
 
-    @NonNull @Override public FoodViewHolder onCreateViewHolder(
+    @NonNull
+    @Override
+    public FoodViewHolder onCreateViewHolder(
             @NonNull ViewGroup parent,
             int viewType
     ) {
         return null;
     }
 
-    @Override public void onBindViewHolder(
+    @Override
+    public void onBindViewHolder(
             @NonNull FoodCategory.FoodViewHolder holder,
             int position
     ) {
 
     }
 
-    @Override public int getItemCount() {
+    @Override
+    public int getItemCount() {
         return foods.size();
     }
 

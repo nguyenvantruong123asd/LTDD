@@ -47,6 +47,7 @@ public class DanhSachChuDeActivity extends AppCompatActivity {
             }
         });
     }
+
     // lấy data tất cả chủ đề
     private void getDataAllChuDe() {
         DataService dataService = APIService.getService(); // khởi tạo  DataService, lấy đường dẫn

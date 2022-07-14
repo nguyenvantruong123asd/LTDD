@@ -9,7 +9,7 @@ import android.view.WindowManager;
 
 public class splashscreen extends AppCompatActivity {
 
-    private static int SPLASH_TIMER=3000;
+    private static int SPLASH_TIMER = 3000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,22 +17,19 @@ public class splashscreen extends AppCompatActivity {
         setContentView(R.layout.activity_splashscreen);
 
 
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
 
-                Intent intent=new Intent(splashscreen.this,MainActivity.class);
+                Intent intent = new Intent(splashscreen.this, MainActivity.class);
                 startActivity(intent);
                 finish();
 
 
             }
-        },SPLASH_TIMER);
-
-
-
+        }, SPLASH_TIMER);
 
 
     }

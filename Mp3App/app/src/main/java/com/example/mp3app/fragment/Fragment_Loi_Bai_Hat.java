@@ -15,6 +15,7 @@ import com.example.mp3app.R;
 public class Fragment_Loi_Bai_Hat extends Fragment {
     View view;
     TextView txtLoiBaiHat;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

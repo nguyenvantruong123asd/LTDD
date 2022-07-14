@@ -121,5 +121,6 @@ public class CreateFoodRequest {
         this.youtubeUrl = youtubeUrl;
     }
 
-    public CreateFoodRequest() {}
+    public CreateFoodRequest() {
+    }
 }

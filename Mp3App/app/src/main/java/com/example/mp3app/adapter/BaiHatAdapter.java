@@ -143,7 +143,6 @@ public class BaiHatAdapter extends RecyclerView.Adapter<BaiHatAdapter.ViewHolder
     }
 
 
-
     class DownloadFileAsync extends AsyncTask<String, String, String> {
 
         @Override
@@ -157,6 +156,7 @@ public class BaiHatAdapter extends RecyclerView.Adapter<BaiHatAdapter.ViewHolder
             mProgressDialog.show();
 
         }
+
         @Override
         protected String doInBackground(String... aurl) {
             int count;

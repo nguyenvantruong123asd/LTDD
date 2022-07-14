@@ -17,10 +17,11 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.util.ArrayList;
 
 public class SearchPage extends AppCompatActivity {
-    ListView listG,listR;
-    ArrayList<String> arrayG= new ArrayList<>();
-    ArrayList<String> arrayR= new ArrayList<>();
+    ListView listG, listR;
+    ArrayList<String> arrayG = new ArrayList<>();
+    ArrayList<String> arrayR = new ArrayList<>();
     ArrayAdapter<String> adapter;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_searchpage);
@@ -33,7 +34,7 @@ public class SearchPage extends AppCompatActivity {
         arrayG.add("Onion");
         arrayG.add("Garlic");
         arrayG.add("Egg");
-        adapter=new ArrayAdapter<>(SearchPage.this, android.R.layout.simple_list_item_1,arrayG);
+        adapter = new ArrayAdapter<>(SearchPage.this, android.R.layout.simple_list_item_1, arrayG);
         listG.setAdapter(adapter);
         listR = findViewById(R.id.listrecipe);
         arrayR.add("Stir Fry Beef with Celery | Quick & Easy Celery Beef Stir Fry Recipe");
@@ -41,7 +42,7 @@ public class SearchPage extends AppCompatActivity {
         arrayR.add("BETTER THAN TAKEOUT AND EASY - Pork Stir Fry with Celery");
         arrayR.add("5 Minutes EASY Egg Fried Rice");
 
-        adapter=new ArrayAdapter<>(SearchPage.this, android.R.layout.simple_list_item_1,arrayR);
+        adapter = new ArrayAdapter<>(SearchPage.this, android.R.layout.simple_list_item_1, arrayR);
         listR.setAdapter(adapter);
         BottomNavigationView nav = findViewById(R.id.bottomnav);
         nav.setSelectedItemId(R.id.home);

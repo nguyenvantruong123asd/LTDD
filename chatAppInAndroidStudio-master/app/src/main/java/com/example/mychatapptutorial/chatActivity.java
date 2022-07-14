@@ -26,7 +26,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 public class chatActivity extends AppCompatActivity {
 
     TabLayout tabLayout;
-    TabItem mchat,mcall,mstatus;
+    TabItem mchat, mcall, mstatus;
     ViewPager viewPager;
     PagerAdapter pagerAdapter;
     androidx.appcompat.widget.Toolbar mtoolbar;
@@ -37,30 +37,29 @@ public class chatActivity extends AppCompatActivity {
     FirebaseFirestore firebaseFirestore;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
 
-        tabLayout=findViewById(R.id.include);
-        mchat=findViewById(R.id.chat);
-        mcall=findViewById(R.id.calls);
-        mstatus=findViewById(R.id.status);
-        viewPager=findViewById(R.id.fragmentcontainer);
+        tabLayout = findViewById(R.id.include);
+        mchat = findViewById(R.id.chat);
+        mcall = findViewById(R.id.calls);
+        mstatus = findViewById(R.id.status);
+        viewPager = findViewById(R.id.fragmentcontainer);
 
-        firebaseFirestore=FirebaseFirestore.getInstance();
-        firebaseAuth=FirebaseAuth.getInstance();
+        firebaseFirestore = FirebaseFirestore.getInstance();
+        firebaseAuth = FirebaseAuth.getInstance();
 
-        mtoolbar=findViewById(R.id.toolbar);
+        mtoolbar = findViewById(R.id.toolbar);
         setSupportActionBar(mtoolbar);
 
 
-        Drawable drawable= ContextCompat.getDrawable(getApplicationContext(),R.drawable.ic_baseline_more_vert_24);
+        Drawable drawable = ContextCompat.getDrawable(getApplicationContext(), R.drawable.ic_baseline_more_vert_24);
         mtoolbar.setOverflowIcon(drawable);
 
 
-        pagerAdapter=new PagerAdapter(getSupportFragmentManager(),tabLayout.getTabCount());
+        pagerAdapter = new PagerAdapter(getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(pagerAdapter);
 
         tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -68,11 +67,9 @@ public class chatActivity extends AppCompatActivity {
             public void onTabSelected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
 
-                if(tab.getPosition()==0 || tab.getPosition()==1|| tab.getPosition()==2)
-                {
+                if (tab.getPosition() == 0 || tab.getPosition() == 1 || tab.getPosition() == 2) {
                     pagerAdapter.notifyDataSetChanged();
                 }
-
 
 
             }
@@ -98,29 +95,27 @@ public class chatActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
-        switch (item.getItemId())
-        {
+        switch (item.getItemId()) {
             case R.id.profile:
-                Intent intent=new Intent(chatActivity.this,ProfileActivity.class);
+                Intent intent = new Intent(chatActivity.this, ProfileActivity.class);
                 startActivity(intent);
                 break;
 
             case R.id.settings:
-                Toast.makeText(getApplicationContext(),"Settign is clicked",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Settign is clicked", Toast.LENGTH_SHORT).show();
                 break;
         }
 
 
-
-        return  true;
+        return true;
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
-        MenuInflater menuInflater=getMenuInflater();
-        menuInflater.inflate(R.menu.menu,menu);
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.menu, menu);
 
 
         return true;
@@ -129,14 +124,13 @@ public class chatActivity extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        DocumentReference documentReference=firebaseFirestore.collection("Users").document(firebaseAuth.getUid());
-        documentReference.update("status","Offline").addOnSuccessListener(new OnSuccessListener<Void>() {
+        DocumentReference documentReference = firebaseFirestore.collection("Users").document(firebaseAuth.getUid());
+        documentReference.update("status", "Offline").addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
-                Toast.makeText(getApplicationContext(),"Now User is Offline",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Now User is Offline", Toast.LENGTH_SHORT).show();
             }
         });
-
 
 
     }
@@ -144,11 +138,11 @@ public class chatActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        DocumentReference documentReference=firebaseFirestore.collection("Users").document(firebaseAuth.getUid());
-        documentReference.update("status","Online").addOnSuccessListener(new OnSuccessListener<Void>() {
+        DocumentReference documentReference = firebaseFirestore.collection("Users").document(firebaseAuth.getUid());
+        documentReference.update("status", "Online").addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
-                Toast.makeText(getApplicationContext(),"Now User is Online",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Now User is Online", Toast.LENGTH_SHORT).show();
             }
         });
 

@@ -58,6 +58,7 @@ public class Fragment_Create_Playlists extends Fragment {
         addEvents();
         return view;
     }
+
     private void getData() {
         DataService dataService = APIService.getService(); // khởi tạo  DataService, lấy đường dẫn
         Call<List<BaiHat>> callBack = dataService.getDataBaiHat(); // gọi pthuc trả về mảng các Album

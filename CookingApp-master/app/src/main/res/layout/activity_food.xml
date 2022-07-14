@@ -1,105 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView29"
-        android:layout_width="398dp"
-        android:layout_height="191dp"
-        app:srcCompat="@drawable/foodpage"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-3dp"
-        tools:layout_editor_absoluteY="-2dp" />
+            android:id="@+id/imageView29"
+            android:layout_width="398dp"
+            android:layout_height="191dp"
+            app:srcCompat="@drawable/foodpage"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-3dp"
+            tools:layout_editor_absoluteY="-2dp"/>
     <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="396dp"
-        android:layout_height="666dp"
-        android:layout_marginTop="155dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bgcakepage"
-        tools:ignore="MissingConstraints" />
+            android:id="@+id/imageView8"
+            android:layout_width="396dp"
+            android:layout_height="666dp"
+            android:layout_marginTop="155dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bgcakepage"
+            tools:ignore="MissingConstraints"/>
     <ImageButton
-        android:id="@+id/btn_backF"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/btn_circle"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back"
-        tools:ignore="MissingConstraints" />
+            android:id="@+id/btn_backF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back"
+            tools:ignore="MissingConstraints"/>
 
 
     <HorizontalScrollView
-        android:id="@+id/scrollView"
-        android:layout_width="393dp"
-        android:layout_height="500dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginBottom="37dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints,ScrollViewCount">
+            android:id="@+id/scrollView"
+            android:layout_width="393dp"
+            android:layout_height="500dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginBottom="37dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints,ScrollViewCount">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
             <ImageView
-                android:id="@+id/ngan"
-                android:layout_width="10dp"
-                android:layout_height="390dp" />
+                    android:id="@+id/ngan"
+                    android:layout_width="10dp"
+                    android:layout_height="390dp"/>
             <ImageButton
-                android:id="@+id/btn_food1"
-                android:layout_width="300dp"
-                android:layout_height="390dp"
-                android:background="@drawable/food1"></ImageButton>
+                    android:id="@+id/btn_food1"
+                    android:layout_width="300dp"
+                    android:layout_height="390dp"
+                    android:background="@drawable/food1"></ImageButton>
             <ImageView
-                android:id="@+id/ngan1"
-                android:layout_width="40dp"
-                android:layout_height="390dp" />
+                    android:id="@+id/ngan1"
+                    android:layout_width="40dp"
+                    android:layout_height="390dp"/>
             <ImageButton
-                android:id="@+id/btn_food2"
-                android:layout_width="300dp"
-                android:layout_height="390dp"
-                android:background="@drawable/food2"></ImageButton>
+                    android:id="@+id/btn_food2"
+                    android:layout_width="300dp"
+                    android:layout_height="390dp"
+                    android:background="@drawable/food2"></ImageButton>
             <ImageView
-                android:id="@+id/ngan2"
-                android:layout_width="40dp"
-                android:layout_height="390dp" />
+                    android:id="@+id/ngan2"
+                    android:layout_width="40dp"
+                    android:layout_height="390dp"/>
             <ImageButton
-                android:id="@+id/btn_food3"
-                android:layout_width="350dp"
-                android:layout_height="500dp"
-                android:background="@drawable/food3"></ImageButton>
+                    android:id="@+id/btn_food3"
+                    android:layout_width="350dp"
+                    android:layout_height="500dp"
+                    android:background="@drawable/food3"></ImageButton>
             <ImageView
-                android:id="@+id/ngan3"
-                android:layout_width="40dp"
-                android:layout_height="390dp" />
+                    android:id="@+id/ngan3"
+                    android:layout_width="40dp"
+                    android:layout_height="390dp"/>
             <ImageButton
-                android:id="@+id/btn_food4"
-                android:layout_width="350dp"
-                android:layout_height="500dp"
-                android:background="@drawable/food4"></ImageButton>
+                    android:id="@+id/btn_food4"
+                    android:layout_width="350dp"
+                    android:layout_height="500dp"
+                    android:background="@drawable/food4"></ImageButton>
 
             <ImageButton
-                android:id="@+id/btn_food5"
-                android:layout_width="350dp"
-                android:layout_height="500dp"
-                android:background="@drawable/food5"></ImageButton>
+                    android:id="@+id/btn_food5"
+                    android:layout_width="350dp"
+                    android:layout_height="500dp"
+                    android:background="@drawable/food5"></ImageButton>
 
             <ImageButton
-                android:id="@+id/btn_food6"
-                android:layout_width="350dp"
-                android:layout_height="500dp"
-                android:background="@drawable/food6"></ImageButton>
+                    android:id="@+id/btn_food6"
+                    android:layout_width="350dp"
+                    android:layout_height="500dp"
+                    android:background="@drawable/food6"></ImageButton>
         </LinearLayout>
 
     </HorizontalScrollView>

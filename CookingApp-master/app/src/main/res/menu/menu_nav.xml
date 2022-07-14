@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/home"
-        android:icon="@drawable/ic_home"
-        android:title="Home" />
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home"
+            android:title="Home"/>
     <item
-        android:id="@+id/fav"
-        android:icon="@drawable/ic_fav"
-        android:title="Fav" />
+            android:id="@+id/fav"
+            android:icon="@drawable/ic_fav"
+            android:title="Fav"/>
 
 
     <item
-        android:id="@+id/search"
-        android:title="Search"
-        android:icon="@drawable/ic_search"
-        />
+            android:id="@+id/search"
+            android:title="Search"
+            android:icon="@drawable/ic_search"
+    />
     <item
-        android:id="@+id/add"
-        android:title="Add"
-        android:icon="@drawable/ic_add"
-        />Logout
+            android:id="@+id/add"
+            android:title="Add"
+            android:icon="@drawable/ic_add"
+    />Logout
     <item
-        android:id="@+id/out"
-        android:title="LogOut"
-        android:icon="@drawable/ic_out"
+            android:id="@+id/out"
+            android:title="LogOut"
+            android:icon="@drawable/ic_out"
 
-        />
+    />
 </menu>

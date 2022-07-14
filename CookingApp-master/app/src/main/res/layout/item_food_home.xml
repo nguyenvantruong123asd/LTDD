@@ -1,65 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="wrap_content"
+                                                   android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/tv_review"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:fontFamily="@font/poppinssemibold"
-        android:text="4.8"
-        android:textSize="8sp"
-        app:layout_constraintStart_toEndOf="@+id/iv_star"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="151dp" />
+            android:id="@+id/tv_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="4.8"
+            android:textSize="8sp"
+            app:layout_constraintStart_toEndOf="@+id/iv_star"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="151dp"/>
 
     <ImageView
-        android:id="@+id/iv_star"
-        android:layout_width="15dp"
-        android:layout_height="14dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="31dp"
-        app:layout_constraintStart_toEndOf="@+id/tv_time_to_cook"
-        app:layout_constraintTop_toBottomOf="@+id/iv_food_cover_image"
-        app:srcCompat="@drawable/star" />
+            android:id="@+id/iv_star"
+            android:layout_width="15dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="31dp"
+            app:layout_constraintStart_toEndOf="@+id/tv_time_to_cook"
+            app:layout_constraintTop_toBottomOf="@+id/iv_food_cover_image"
+            app:srcCompat="@drawable/star"/>
 
     <TextView
-        android:id="@+id/tv_time_to_cook"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="6dp"
-        android:fontFamily="@font/poppinssemibold"
-        android:text="120 mins"
-        android:textSize="8sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_food_name"
-        tools:ignore="MissingConstraints" />
+            android:id="@+id/tv_time_to_cook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="120 mins"
+            android:textSize="8sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_food_name"
+            tools:ignore="MissingConstraints"/>
 
     <ImageView
-        android:id="@+id/iv_food_cover_image"
-        android:layout_width="150dp"
-        android:layout_height="113dp"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="7dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/freshorangecake1" />
+            android:id="@+id/iv_food_cover_image"
+            android:layout_width="150dp"
+            android:layout_height="113dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/freshorangecake1"/>
 
     <TextView
-        android:id="@+id/tv_food_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/poppinssemibold"
-        android:text="Fresh Orange Cake   "
-        android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_food_cover_image"
-        tools:ignore="MissingConstraints" />
+            android:id="@+id/tv_food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Fresh Orange Cake   "
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_food_cover_image"
+            tools:ignore="MissingConstraints"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

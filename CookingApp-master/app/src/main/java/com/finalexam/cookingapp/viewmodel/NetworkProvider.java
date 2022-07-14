@@ -206,14 +206,16 @@ public final class NetworkProvider {
 
     public void createFood(CreateFoodRequest request) {
         retrofit.create(APIService.class).createFood(request).enqueue(new Callback<CreateFoodResponse>() {
-            @Override public void onResponse(
+            @Override
+            public void onResponse(
                     Call<CreateFoodResponse> call,
                     Response<CreateFoodResponse> response
             ) {
 
             }
 
-            @Override public void onFailure(
+            @Override
+            public void onFailure(
                     Call<CreateFoodResponse> call, Throwable t
             ) {
 

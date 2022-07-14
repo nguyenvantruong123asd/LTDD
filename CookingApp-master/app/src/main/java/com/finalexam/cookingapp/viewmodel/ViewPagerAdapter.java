@@ -34,7 +34,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         String title = "";
-        switch (position){
+        switch (position) {
             case 1:
                 title = "Preparations";
                 break;

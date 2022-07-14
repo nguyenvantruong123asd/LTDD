@@ -12,6 +12,7 @@ import com.finalexam.cookingapp.view.activity.HomeActivity;
 
 public class Infor extends AppCompatActivity {
     ImageButton back;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_infor);

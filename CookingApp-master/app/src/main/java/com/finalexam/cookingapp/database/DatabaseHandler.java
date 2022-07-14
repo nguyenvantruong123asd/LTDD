@@ -117,7 +117,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
 
             if (cursor.moveToFirst()) {
-                while(!cursor.isAfterLast()) {
+                while (!cursor.isAfterLast()) {
                     Category category = new Category(cursor.getInt(0), cursor.getString(1), cursor.getString(2));
                     categories.add(category);
 
@@ -168,7 +168,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 
 
             if (cursor.moveToFirst()) {
-                while(!cursor.isAfterLast()) {
+                while (!cursor.isAfterLast()) {
                     Ingredient ingredient = new Ingredient(cursor.getInt(0), cursor.getString(1));
                     ingredients.add(ingredient);
 
